@@ -1,0 +1,20 @@
+[project]
+name = "crypto-registry"
+version = "0.1.0"
+description = "Fetch, parse and merge cryptographic algorithm metadata (OIDs, primitives, NIST security levels)"
+requires-python = ">=3.12"
+dependencies = ["PyYAML>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "mypy>=1.10", "types-PyYAML"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unreachable = true
+disallow_any_explicit = true
+disallow_any_expr = false
+files = ["fetch.py", "parse.py", "merge.py", "parsers", "registry", "tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

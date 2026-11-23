@@ -1,0 +1,3175 @@
+{
+  "generated_at_utc": "2026-11-23T08:02:08Z",
+  "sources": [
+    {
+      "id": "cyclonedx-registry",
+      "repo": "CycloneDX/specification",
+      "branch": "master",
+      "commit": "5fee6af48d43c751dc6a5b31138f06af2b10bac5",
+      "files": [
+        {
+          "path": "schema/cryptography-defs.json",
+          "url": "https://raw.githubusercontent.com/CycloneDX/specification/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+          "permalink": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+          "sha256": "b2f4b7f1b52fa8948160465724066d110c497d847cf81f12550b0f72dd13c193",
+          "bytes": 110013
+        }
+      ]
+    }
+  ],
+  "count": 172,
+  "registry_last_updated": "2026-02-24T00:00:00Z",
+  "records": [
+    {
+      "family": "RSASSA-PKCS1",
+      "primitive": "signature",
+      "pattern": "RSA-PKCS1-1.5[-{hashAlgorithm}][-{keyLength}]",
+      "regex": "^(?:RSA\\-PKCS1\\-1\\.5(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC8017",
+          "url": "https://doi.org/10.17487/RFC8017"
+        },
+        {
+          "name": "IEEE1363",
+          "url": "https://doi.org/10.1109/IEEESTD.2000.92290"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "RSASSA-PSS",
+      "primitive": "signature",
+      "pattern": "RSA-PSS[-{hashAlgorithm}][-{maskGenAlgorithm}][-{saltLength}][-{keyLength}]",
+      "regex": "^(?:RSA\\-PSS(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC8017",
+          "url": "https://doi.org/10.17487/RFC8017"
+        },
+        {
+          "name": "IEEE1363A",
+          "url": "https://doi.org/10.1109/IEEESTD.2004.94612"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "RSA-X931",
+      "primitive": "signature",
+      "pattern": "RSA-X9.31[-{hashAlgorithm}][-{keyLength}]",
+      "regex": "^(?:RSA\\-X9\\.31(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "X9.31",
+          "url": "https://standards.globalspec.com/std/1955293/ansi-x9-31"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "RSAES-PKCS1",
+      "primitive": "pke",
+      "pattern": "RSA-PKCS1-1.5[-{keyLength}]",
+      "regex": "^(?:RSA\\-PKCS1\\-1\\.5(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC8017",
+          "url": "https://doi.org/10.17487/RFC8017"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "RSAES-OAEP",
+      "primitive": "pke",
+      "pattern": "RSA-OAEP[-{hashAlgorithm}][-{maskGenAlgorithm}][-{keyLength}]",
+      "regex": "^(?:RSA\\-OAEP(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC8017",
+          "url": "https://doi.org/10.17487/RFC8017"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "EdDSA",
+      "primitive": "signature",
+      "pattern": "Ed(25519|448)[(ph|ctx)]",
+      "regex": "^(?:Ed(?:25519|448)(?:(?:ph|ctx))?)$",
+      "standards": [
+        {
+          "name": "RFC8032",
+          "url": "https://doi.org/10.17487/RFC8032"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ECDSA",
+      "primitive": "signature",
+      "pattern": "ECDSA[-{ellipticCurve}][-{hashAlgorithm}]",
+      "regex": "^(?:ECDSA(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "FIPS186-4",
+          "url": "https://doi.org/10.6028/NIST.FIPS.186-4"
+        },
+        {
+          "name": "X9.62",
+          "url": "https://standards.globalspec.com/std/1955141/ansi-x9-62"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ECIES",
+      "primitive": "pke",
+      "pattern": "ECIES[-{ellipticCurve}][-{kdf}][-{symmetricCipher}][-{mac}]",
+      "regex": "^(?:ECIES(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SEC1",
+          "url": "https://www.secg.org/sec1-v2.pdf"
+        },
+        {
+          "name": "ISO/IEC 18033-2",
+          "url": "https://www.iso.org/standard/37971.html"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "HPKE",
+      "primitive": "pke",
+      "pattern": "HPKE[-(mode_base|mode_psk|mode_auth|mode_auth_psk)]-{kem}-{kdf}-{aead}",
+      "regex": "^(?:HPKE(?:\\-(?:mode_base|mode_psk|mode_auth|mode_auth_psk))?\\-([^\\s]+?)\\-([^\\s]+?)\\-([^\\s]+?))$",
+      "standards": [
+        {
+          "name": "RFC9180",
+          "url": "https://doi.org/10.17487/RFC9180"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "MQV",
+      "primitive": "key-agree",
+      "pattern": "FFMQV[-{namedGroup}]",
+      "regex": "^(?:FFMQV(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-56A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-56Ar3"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "MQV",
+      "primitive": "key-agree",
+      "pattern": "ECMQV[-{ellipticCurve}]",
+      "regex": "^(?:ECMQV(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-56A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-56Ar3"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ElGamal",
+      "primitive": "pke",
+      "pattern": "ElGamal[-{keyLength}]",
+      "regex": "^(?:ElGamal(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "ISO/IEC 18033-2",
+          "url": "https://www.iso.org/standard/37971.html"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ElGamal",
+      "primitive": "pke",
+      "pattern": "EC-ElGamal[-{ellipticCurve}]",
+      "regex": "^(?:EC\\-ElGamal(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "ISO/IEC 18033-2",
+          "url": "https://www.iso.org/standard/37971.html"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "DSA",
+      "primitive": "signature",
+      "pattern": "DSA[-{length}][-{hashAlgorithm}]",
+      "regex": "^(?:DSA(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "FIPS186-4",
+          "url": "https://doi.org/10.6028/NIST.FIPS.186-4"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ECDH",
+      "primitive": "key-agree",
+      "pattern": "ECDH[E][-{ellipticCurve}]",
+      "regex": "^(?:ECDH(?:E)?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-56A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-56Ar3"
+        },
+        {
+          "name": "IEEE1363",
+          "url": "https://doi.org/10.1109/IEEESTD.2000.92290"
+        },
+        {
+          "name": "X9.63",
+          "url": "https://webstore.ansi.org/standards/ASCX9/ansix9632011r2017"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ECDH",
+      "primitive": "key-agree",
+      "pattern": "x25519|x448",
+      "regex": "^(?:x25519|x448)$",
+      "standards": [
+        {
+          "name": "SP800-56A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-56Ar3"
+        },
+        {
+          "name": "IEEE1363",
+          "url": "https://doi.org/10.1109/IEEESTD.2000.92290"
+        },
+        {
+          "name": "X9.63",
+          "url": "https://webstore.ansi.org/standards/ASCX9/ansix9632011r2017"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "FFDH",
+      "primitive": "key-agree",
+      "pattern": "FFDH[E][-{namedGroup}]",
+      "regex": "^(?:FFDH(?:E)?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC7919",
+          "url": "https://doi.org/10.17487/RFC7919"
+        },
+        {
+          "name": "SP800-56A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-56Ar3"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SRP",
+      "primitive": "key-agree",
+      "pattern": "SRP-3[-{hashAlgorithm}][-{namedGroup}]",
+      "regex": "^(?:SRP\\-3(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC2945",
+          "url": "https://doi.org/10.17487/RFC2945"
+        },
+        {
+          "name": "RFC5054",
+          "url": "https://doi.org/10.17487/RFC5054"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SRP",
+      "primitive": "key-agree",
+      "pattern": "SRP-6[-{hashAlgorithm}][-{namedGroup}]",
+      "regex": "^(?:SRP\\-6(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC2945",
+          "url": "https://doi.org/10.17487/RFC2945"
+        },
+        {
+          "name": "RFC5054",
+          "url": "https://doi.org/10.17487/RFC5054"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "J-PAKE",
+      "primitive": "key-agree",
+      "pattern": "J-PAKE[-{namedGroup}][-{kdf}][-{mac}]",
+      "regex": "^(?:J\\-PAKE(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC8236",
+          "url": "https://doi.org/10.17487/RFC8236"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "J-PAKE",
+      "primitive": "key-agree",
+      "pattern": "J-PAKE[-{ellipticCurve}][-{kdf}][-{mac}]",
+      "regex": "^(?:J\\-PAKE(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC8236",
+          "url": "https://doi.org/10.17487/RFC8236"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SHA-1",
+      "primitive": "hash",
+      "pattern": "SHA-1",
+      "regex": "^(?:SHA\\-1)$",
+      "standards": [
+        {
+          "name": "FIPS180-4",
+          "url": "https://doi.org/10.6028/NIST.FIPS.180-4"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SHA-2",
+      "primitive": "hash",
+      "pattern": "SHA-(224|256|384|512|512/224|512/256)",
+      "regex": "^(?:SHA\\-(?:224|256|384|512|512/224|512/256))$",
+      "standards": [
+        {
+          "name": "FIPS180-4",
+          "url": "https://doi.org/10.6028/NIST.FIPS.180-4"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SHA-3",
+      "primitive": "hash",
+      "pattern": "SHA3-(224|256|384|512)",
+      "regex": "^(?:SHA3\\-(?:224|256|384|512))$",
+      "standards": [
+        {
+          "name": "FIPS202",
+          "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf"
+        },
+        {
+          "name": "SP800-185",
+          "url": "https://doi.org/10.6028/NIST.SP.800-185"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SHA-3",
+      "primitive": "xof",
+      "pattern": "SHAKE(128|256)",
+      "regex": "^(?:SHAKE(?:128|256))$",
+      "standards": [
+        {
+          "name": "FIPS202",
+          "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf"
+        },
+        {
+          "name": "SP800-185",
+          "url": "https://doi.org/10.6028/NIST.SP.800-185"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SHA-3",
+      "primitive": "xof",
+      "pattern": "cSHAKE(128|256)",
+      "regex": "^(?:cSHAKE(?:128|256))$",
+      "standards": [
+        {
+          "name": "FIPS202",
+          "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf"
+        },
+        {
+          "name": "SP800-185",
+          "url": "https://doi.org/10.6028/NIST.SP.800-185"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SHA-3",
+      "primitive": "mac",
+      "pattern": "KMAC(128|256)",
+      "regex": "^(?:KMAC(?:128|256))$",
+      "standards": [
+        {
+          "name": "FIPS202",
+          "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf"
+        },
+        {
+          "name": "SP800-185",
+          "url": "https://doi.org/10.6028/NIST.SP.800-185"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SHA-3",
+      "primitive": "mac",
+      "pattern": "KMACXOF(128|256)",
+      "regex": "^(?:KMACXOF(?:128|256))$",
+      "standards": [
+        {
+          "name": "FIPS202",
+          "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf"
+        },
+        {
+          "name": "SP800-185",
+          "url": "https://doi.org/10.6028/NIST.SP.800-185"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SHA-3",
+      "primitive": "hash",
+      "pattern": "TupleHash(128|256)",
+      "regex": "^(?:TupleHash(?:128|256))$",
+      "standards": [
+        {
+          "name": "FIPS202",
+          "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf"
+        },
+        {
+          "name": "SP800-185",
+          "url": "https://doi.org/10.6028/NIST.SP.800-185"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SHA-3",
+      "primitive": "xof",
+      "pattern": "TupleHashXOF(128|256)",
+      "regex": "^(?:TupleHashXOF(?:128|256))$",
+      "standards": [
+        {
+          "name": "FIPS202",
+          "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf"
+        },
+        {
+          "name": "SP800-185",
+          "url": "https://doi.org/10.6028/NIST.SP.800-185"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SHA-3",
+      "primitive": "hash",
+      "pattern": "ParallelHash(128|256)",
+      "regex": "^(?:ParallelHash(?:128|256))$",
+      "standards": [
+        {
+          "name": "FIPS202",
+          "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf"
+        },
+        {
+          "name": "SP800-185",
+          "url": "https://doi.org/10.6028/NIST.SP.800-185"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SHA-3",
+      "primitive": "xof",
+      "pattern": "ParallelHashXOF(128|256)",
+      "regex": "^(?:ParallelHashXOF(?:128|256))$",
+      "standards": [
+        {
+          "name": "FIPS202",
+          "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf"
+        },
+        {
+          "name": "SP800-185",
+          "url": "https://doi.org/10.6028/NIST.SP.800-185"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "AES",
+      "primitive": "block-cipher",
+      "pattern": "AES[-(128|192|256)][-(ECB|CBC|CFB(1|8|64|128)|OFB|CTR|XTS|CTS)][-{padding}][-{ivlen}]",
+      "regex": "^(?:AES(?:\\-(?:128|192|256))?(?:\\-(?:ECB|CBC|CFB(?:1|8|64|128)|OFB|CTR|XTS|CTS))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "FIPS197",
+          "url": "https://doi.org/10.6028/NIST.FIPS.197-upd1"
+        },
+        {
+          "name": "SP800-38A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38A"
+        },
+        {
+          "name": "SP800-38E",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38E"
+        },
+        {
+          "name": "RFC5116",
+          "url": "https://doi.org/10.17487/RFC5116"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "AES",
+      "primitive": "ae",
+      "pattern": "AES[-(128|192|256)][-(GCM|CCM)][-{tagLength}][-{ivLength}]",
+      "regex": "^(?:AES(?:\\-(?:128|192|256))?(?:\\-(?:GCM|CCM))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-38C",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38C"
+        },
+        {
+          "name": "SP800-38D",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38D"
+        },
+        {
+          "name": "RFC3610",
+          "url": "https://doi.org/10.17487/RFC3610"
+        },
+        {
+          "name": "FIPS197",
+          "url": "https://doi.org/10.6028/NIST.FIPS.197-upd1"
+        },
+        {
+          "name": "SP800-38A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38A"
+        },
+        {
+          "name": "SP800-38E",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38E"
+        },
+        {
+          "name": "RFC5116",
+          "url": "https://doi.org/10.17487/RFC5116"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "AES",
+      "primitive": "ae",
+      "pattern": "AES[-(128|192|256)]-GCM-SIV[-{tagLength}][-{ivLength}]",
+      "regex": "^(?:AES(?:\\-(?:128|192|256))?\\-GCM\\-SIV(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC8452",
+          "url": "https://doi.org/10.17487/RFC8452"
+        },
+        {
+          "name": "FIPS197",
+          "url": "https://doi.org/10.6028/NIST.FIPS.197-upd1"
+        },
+        {
+          "name": "SP800-38A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38A"
+        },
+        {
+          "name": "SP800-38E",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38E"
+        },
+        {
+          "name": "RFC5116",
+          "url": "https://doi.org/10.17487/RFC5116"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "AES",
+      "primitive": "ae",
+      "pattern": "AES[-(128|192|256)]-EAX[-{tagLength}][-{nonceLength}]",
+      "regex": "^(?:AES(?:\\-(?:128|192|256))?\\-EAX(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "ISO/IEC 19772:2020",
+          "url": "https://www.iso.org/standard/81550.html"
+        },
+        {
+          "name": "FIPS197",
+          "url": "https://doi.org/10.6028/NIST.FIPS.197-upd1"
+        },
+        {
+          "name": "SP800-38A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38A"
+        },
+        {
+          "name": "SP800-38E",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38E"
+        },
+        {
+          "name": "RFC5116",
+          "url": "https://doi.org/10.17487/RFC5116"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "AES",
+      "primitive": "ae",
+      "pattern": "AES[-(128|192|256)]-OCB[-{tagLength}]",
+      "regex": "^(?:AES(?:\\-(?:128|192|256))?\\-OCB(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC7253",
+          "url": "https://doi.org/10.17487/RFC7253"
+        },
+        {
+          "name": "FIPS197",
+          "url": "https://doi.org/10.6028/NIST.FIPS.197-upd1"
+        },
+        {
+          "name": "SP800-38A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38A"
+        },
+        {
+          "name": "SP800-38E",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38E"
+        },
+        {
+          "name": "RFC5116",
+          "url": "https://doi.org/10.17487/RFC5116"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "AES",
+      "primitive": "ae",
+      "pattern": "AES[-(128|192|256)]-CTR-HMAC-SHA1[-96]",
+      "regex": "^(?:AES(?:\\-(?:128|192|256))?\\-CTR\\-HMAC\\-SHA1(?:\\-96)?)$",
+      "standards": [
+        {
+          "name": "RFC3686",
+          "url": "https://doi.org/10.17487/RFC3686"
+        },
+        {
+          "name": "FIPS197",
+          "url": "https://doi.org/10.6028/NIST.FIPS.197-upd1"
+        },
+        {
+          "name": "SP800-38A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38A"
+        },
+        {
+          "name": "SP800-38E",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38E"
+        },
+        {
+          "name": "RFC5116",
+          "url": "https://doi.org/10.17487/RFC5116"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "AES",
+      "primitive": "ae",
+      "pattern": "AES[-(128|192|256)]-SIV",
+      "regex": "^(?:AES(?:\\-(?:128|192|256))?\\-SIV)$",
+      "standards": [
+        {
+          "name": "RFC5297",
+          "url": "https://doi.org/10.17487/RFC5297"
+        },
+        {
+          "name": "FIPS197",
+          "url": "https://doi.org/10.6028/NIST.FIPS.197-upd1"
+        },
+        {
+          "name": "SP800-38A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38A"
+        },
+        {
+          "name": "SP800-38E",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38E"
+        },
+        {
+          "name": "RFC5116",
+          "url": "https://doi.org/10.17487/RFC5116"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "AES",
+      "primitive": "key-wrap",
+      "pattern": "AES[-(128|192|256)][-(KW|KWP)]",
+      "regex": "^(?:AES(?:\\-(?:128|192|256))?(?:\\-(?:KW|KWP))?)$",
+      "standards": [
+        {
+          "name": "SP800-38F",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38F"
+        },
+        {
+          "name": "FIPS197",
+          "url": "https://doi.org/10.6028/NIST.FIPS.197-upd1"
+        },
+        {
+          "name": "SP800-38A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38A"
+        },
+        {
+          "name": "SP800-38E",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38E"
+        },
+        {
+          "name": "RFC5116",
+          "url": "https://doi.org/10.17487/RFC5116"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "AES",
+      "primitive": "key-wrap",
+      "pattern": "AES[-(128|192|256)]-Wrap[-PKCS7]",
+      "regex": "^(?:AES(?:\\-(?:128|192|256))?\\-Wrap(?:\\-PKCS7)?)$",
+      "standards": [
+        {
+          "name": "RFC5649",
+          "url": "https://doi.org/10.17487/RFC5649"
+        },
+        {
+          "name": "FIPS197",
+          "url": "https://doi.org/10.6028/NIST.FIPS.197-upd1"
+        },
+        {
+          "name": "SP800-38A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38A"
+        },
+        {
+          "name": "SP800-38E",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38E"
+        },
+        {
+          "name": "RFC5116",
+          "url": "https://doi.org/10.17487/RFC5116"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "AES",
+      "primitive": "mac",
+      "pattern": "AES[-(128|192|256)][-(GMAC|CMAC)]",
+      "regex": "^(?:AES(?:\\-(?:128|192|256))?(?:\\-(?:GMAC|CMAC))?)$",
+      "standards": [
+        {
+          "name": "SP800-38B",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38B"
+        },
+        {
+          "name": "SP800-38D",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38D"
+        },
+        {
+          "name": "FIPS197",
+          "url": "https://doi.org/10.6028/NIST.FIPS.197-upd1"
+        },
+        {
+          "name": "SP800-38A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38A"
+        },
+        {
+          "name": "SP800-38E",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38E"
+        },
+        {
+          "name": "RFC5116",
+          "url": "https://doi.org/10.17487/RFC5116"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "AES",
+      "primitive": "mac",
+      "pattern": "AES-CMAC-PRF-128",
+      "regex": "^(?:AES\\-CMAC\\-PRF\\-128)$",
+      "standards": [
+        {
+          "name": "RFC4615",
+          "url": "https://doi.org/10.17487/RFC4615"
+        },
+        {
+          "name": "FIPS197",
+          "url": "https://doi.org/10.6028/NIST.FIPS.197-upd1"
+        },
+        {
+          "name": "SP800-38A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38A"
+        },
+        {
+          "name": "SP800-38E",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38E"
+        },
+        {
+          "name": "RFC5116",
+          "url": "https://doi.org/10.17487/RFC5116"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "AES",
+      "primitive": "mac",
+      "pattern": "AES[-(128|192|256)][-(XCBC_MAC[_96])]",
+      "regex": "^(?:AES(?:\\-(?:128|192|256))?(?:\\-(?:XCBC_MAC(?:_96)?))?)$",
+      "standards": [
+        {
+          "name": "FIPS197",
+          "url": "https://doi.org/10.6028/NIST.FIPS.197-upd1"
+        },
+        {
+          "name": "SP800-38A",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38A"
+        },
+        {
+          "name": "SP800-38E",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38E"
+        },
+        {
+          "name": "RFC5116",
+          "url": "https://doi.org/10.17487/RFC5116"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "HKDF",
+      "primitive": "kdf",
+      "pattern": "HKDF[-{hashAlgorithm}]",
+      "regex": "^(?:HKDF(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC5869",
+          "url": "https://doi.org/10.17487/RFC5869"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "HMAC",
+      "primitive": "mac",
+      "pattern": "HMAC[-{hashAlgorithm}][-{tagLength}]",
+      "regex": "^(?:HMAC(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-224",
+          "url": "https://doi.org/10.6028/NIST.SP.800-224.ipd"
+        },
+        {
+          "name": "RFC2104",
+          "url": "https://doi.org/10.17487/RFC2104"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "CMAC",
+      "primitive": "mac",
+      "pattern": "CMAC[-{cipherAlgorithm}][-{length}]",
+      "regex": "^(?:CMAC(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-38B",
+          "url": "https://doi.org/10.6028/NIST.SP.800-38B"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "UMAC",
+      "primitive": "mac",
+      "pattern": "UMAC[-(32|64|96|128)]",
+      "regex": "^(?:UMAC(?:\\-(?:32|64|96|128))?)$",
+      "standards": [
+        {
+          "name": "RFC4418",
+          "url": "https://doi.org/10.17487/RFC4418"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ChaCha",
+      "primitive": "stream-cipher",
+      "pattern": "ChaCha20[-(AES|{otherBlockCipher})]",
+      "regex": "^(?:ChaCha20(?:\\-(?:AES|([^\\s]+?)))?)$",
+      "standards": [
+        {
+          "name": "RFC8439",
+          "url": "https://doi.org/10.17487/RFC8439"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Poly1305",
+      "primitive": "mac",
+      "pattern": "Poly1305",
+      "regex": "^(?:Poly1305)$",
+      "standards": [
+        {
+          "name": "RFC8439",
+          "url": "https://doi.org/10.17487/RFC8439"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ChaCha20",
+      "primitive": "stream-cipher",
+      "pattern": "ChaCha20",
+      "regex": "^(?:ChaCha20)$",
+      "standards": [
+        {
+          "name": "RFC8439",
+          "url": "https://doi.org/10.17487/RFC8439"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ChaCha20",
+      "primitive": "ae",
+      "pattern": "ChaCha20-Poly1305",
+      "regex": "^(?:ChaCha20\\-Poly1305)$",
+      "standards": [
+        {
+          "name": "RFC8439",
+          "url": "https://doi.org/10.17487/RFC8439"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ChaCha20",
+      "primitive": "ae",
+      "pattern": "XChaCha20-Poly1305",
+      "regex": "^(?:XChaCha20\\-Poly1305)$",
+      "standards": [
+        {
+          "name": "RFC8439",
+          "url": "https://doi.org/10.17487/RFC8439"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Salsa20",
+      "primitive": "stream-cipher",
+      "pattern": "Salsa20",
+      "regex": "^(?:Salsa20)$",
+      "standards": [
+        {
+          "name": "The Salsa20 Family of Stream Ciphers",
+          "url": "https://doi.org/10.1007/978-3-540-68351-3_8"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Salsa20",
+      "primitive": "ae",
+      "pattern": "Salsa20-Poly1305",
+      "regex": "^(?:Salsa20\\-Poly1305)$",
+      "standards": [
+        {
+          "name": "The Salsa20 Family of Stream Ciphers",
+          "url": "https://doi.org/10.1007/978-3-540-68351-3_8"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "RC4",
+      "primitive": "stream-cipher",
+      "pattern": "RC4[-{keyLength}]",
+      "regex": "^(?:RC4(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "Applied Cryptography: Protocols, Algorithms, and Source Code in C",
+          "url": "https://dl.acm.org/doi/book/10.5555/572932"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "3DES",
+      "primitive": "block-cipher",
+      "pattern": "3DES[-{keyLength}][-{mode}]",
+      "regex": "^(?:3DES(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC1851",
+          "url": "https://doi.org/10.17487/RFC1851"
+        },
+        {
+          "name": "FIPS PUB 46-3",
+          "url": "https://csrc.nist.gov/pubs/fips/46-3/final"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "DES",
+      "primitive": "block-cipher",
+      "pattern": "DES[-{keyLength}][-{mode}]",
+      "regex": "^(?:DES(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "FIPS PUB 46-3",
+          "url": "https://csrc.nist.gov/pubs/fips/46-3/final"
+        },
+        {
+          "name": "ANSI INCITS 92-1981",
+          "url": "https://webstore.ansi.org/standards/incits/ansiincits921981r2003"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "IDEA",
+      "primitive": "block-cipher",
+      "pattern": "IDEA[-{mode}]",
+      "regex": "^(?:IDEA(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "A Proposal for a New Block Encryption Standard",
+          "url": "https://doi.org/10.1007%2F3-540-46877-3_35"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "RC2",
+      "primitive": "block-cipher",
+      "pattern": "RC2[-{keyLength}][-{mode}]",
+      "regex": "^(?:RC2(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC2268",
+          "url": "https://doi.org/10.17487/RFC2268"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ML-DSA",
+      "primitive": "signature",
+      "pattern": "ML-DSA-(44|65|87)",
+      "regex": "^(?:ML\\-DSA\\-(?:44|65|87))$",
+      "standards": [
+        {
+          "name": "FIPS204",
+          "url": "https://doi.org/10.6028/NIST.FIPS.204"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ML-DSA",
+      "primitive": "signature",
+      "pattern": "HashML-DSA-(44|65|87)[-{hashAlgorithm}]",
+      "regex": "^(?:HashML\\-DSA\\-(?:44|65|87)(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "FIPS204",
+          "url": "https://doi.org/10.6028/NIST.FIPS.204"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Composite-ML-DSA",
+      "primitive": "signature",
+      "pattern": "ML-DSA-44-(RSA-PSS-2048-SHA-256|RSA-PKCS1-1.5-2048-SHA-256|Ed25519-SHA-512|ECDSA-secp256r1-SHA-256)",
+      "regex": "^(?:ML\\-DSA\\-44\\-(?:RSA\\-PSS\\-2048\\-SHA\\-256|RSA\\-PKCS1\\-1\\.5\\-2048\\-SHA\\-256|Ed25519\\-SHA\\-512|ECDSA\\-secp256r1\\-SHA\\-256))$",
+      "standards": [
+        {
+          "name": "RFC10073",
+          "url": "https://doi.org/10.17487/RFC10073"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Composite-ML-DSA",
+      "primitive": "signature",
+      "pattern": "ML-DSA-65-(RSA-PSS-3072-SHA-512|RSA-PKCS1-1.5-3072-SHA-512|RSA-PSS-4096-SHA-512|RSA-PKCS1-1.5-4096-SHA-512|ECDSA-secp256r1-SHA-512|ECDSA-secp384r1-SHA-512|ECDSA-brainpoolP256r1-SHA-512|Ed25519-SHA-512)",
+      "regex": "^(?:ML\\-DSA\\-65\\-(?:RSA\\-PSS\\-3072\\-SHA\\-512|RSA\\-PKCS1\\-1\\.5\\-3072\\-SHA\\-512|RSA\\-PSS\\-4096\\-SHA\\-512|RSA\\-PKCS1\\-1\\.5\\-4096\\-SHA\\-512|ECDSA\\-secp256r1\\-SHA\\-512|ECDSA\\-secp384r1\\-SHA\\-512|ECDSA\\-brainpoolP256r1\\-SHA\\-512|Ed25519\\-SHA\\-512))$",
+      "standards": [
+        {
+          "name": "RFC10073",
+          "url": "https://doi.org/10.17487/RFC10073"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Composite-ML-DSA",
+      "primitive": "signature",
+      "pattern": "ML-DSA-87-(ECDSA-secp384r1-SHA-512|ECDSA-brainpoolP384r1-SHA-512|Ed448-SHAKE256|RSA-PSS-3072-SHA-512|RSA-PSS-4096-SHA-512|ECDSA-secp521r1-SHA-512)",
+      "regex": "^(?:ML\\-DSA\\-87\\-(?:ECDSA\\-secp384r1\\-SHA\\-512|ECDSA\\-brainpoolP384r1\\-SHA\\-512|Ed448\\-SHAKE256|RSA\\-PSS\\-3072\\-SHA\\-512|RSA\\-PSS\\-4096\\-SHA\\-512|ECDSA\\-secp521r1\\-SHA\\-512))$",
+      "standards": [
+        {
+          "name": "RFC10073",
+          "url": "https://doi.org/10.17487/RFC10073"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SLH-DSA",
+      "primitive": "signature",
+      "pattern": "SLH-DSA-(SHA2|SHAKE)-(128s|128f|192s|192f|256s|256f)",
+      "regex": "^(?:SLH\\-DSA\\-(?:SHA2|SHAKE)\\-(?:128s|128f|192s|192f|256s|256f))$",
+      "standards": [
+        {
+          "name": "FIPS205",
+          "url": "https://doi.org/10.6028/NIST.FIPS.205"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SLH-DSA",
+      "primitive": "signature",
+      "pattern": "HashSLH-DSA-(SHA2|SHAKE)-(128s|128f|192s|192f|256s|256f)[-{hashAlgorithm}]",
+      "regex": "^(?:HashSLH\\-DSA\\-(?:SHA2|SHAKE)\\-(?:128s|128f|192s|192f|256s|256f)(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "FIPS205",
+          "url": "https://doi.org/10.6028/NIST.FIPS.205"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "XMSS",
+      "primitive": "signature",
+      "pattern": "XMSS-(SHA2|SHAKE)[_{h}][_{nbits}]",
+      "regex": "^(?:XMSS\\-(?:SHA2|SHAKE)(?:_([^\\s]+?))?(?:_([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-208",
+          "url": "https://doi.org/10.6028/NIST.SP.800-208"
+        },
+        {
+          "name": "RFC8391",
+          "url": "https://doi.org/10.17487/RFC8391"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "XMSS",
+      "primitive": "signature",
+      "pattern": "XMSSMT-(SHA2|SHAKE)[_{h}/{d}][_{nbits}]",
+      "regex": "^(?:XMSSMT\\-(?:SHA2|SHAKE)(?:_([^\\s]+?)/([^\\s]+?))?(?:_([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-208",
+          "url": "https://doi.org/10.6028/NIST.SP.800-208"
+        },
+        {
+          "name": "RFC8391",
+          "url": "https://doi.org/10.17487/RFC8391"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "XMSS",
+      "primitive": "signature",
+      "pattern": "WOTSP-(SHA2|SHAKE)[_{nbits}]",
+      "regex": "^(?:WOTSP\\-(?:SHA2|SHAKE)(?:_([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-208",
+          "url": "https://doi.org/10.6028/NIST.SP.800-208"
+        },
+        {
+          "name": "RFC8391",
+          "url": "https://doi.org/10.17487/RFC8391"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "LMS",
+      "primitive": "signature",
+      "pattern": "LMS[_(SHA256|SHAKE)][_M{bytesPerNode}][_H{treeHeight}]",
+      "regex": "^(?:LMS(?:_(?:SHA256|SHAKE))?(?:_M([^\\s]+?))?(?:_H([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-208",
+          "url": "https://doi.org/10.6028/NIST.SP.800-208"
+        },
+        {
+          "name": "RFC8554",
+          "url": "https://doi.org/10.17487/RFC8554"
+        },
+        {
+          "name": "RFC9858",
+          "url": "https://doi.org/10.17487/RFC9858"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "LMS",
+      "primitive": "signature",
+      "pattern": "LMOTS[_(SHA256|SHAKE)][_N{hashOutputLength}][_W{winternitzParameter}]",
+      "regex": "^(?:LMOTS(?:_(?:SHA256|SHAKE))?(?:_N([^\\s]+?))?(?:_W([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-208",
+          "url": "https://doi.org/10.6028/NIST.SP.800-208"
+        },
+        {
+          "name": "RFC8554",
+          "url": "https://doi.org/10.17487/RFC8554"
+        },
+        {
+          "name": "RFC9858",
+          "url": "https://doi.org/10.17487/RFC9858"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "LMS",
+      "primitive": "signature",
+      "pattern": "HSS[_L{levels}][(_<LMS>_<LMOTS>)+]",
+      "regex": "^(?:HSS(?:_L([^\\s]+?))?(?:(?:_([^\\s]+?)_([^\\s]+?))+)?)$",
+      "standards": [
+        {
+          "name": "SP800-208",
+          "url": "https://doi.org/10.6028/NIST.SP.800-208"
+        },
+        {
+          "name": "RFC8554",
+          "url": "https://doi.org/10.17487/RFC8554"
+        },
+        {
+          "name": "RFC9858",
+          "url": "https://doi.org/10.17487/RFC9858"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ML-KEM",
+      "primitive": "kem",
+      "pattern": "ML-KEM-(512|768|1024)",
+      "regex": "^(?:ML\\-KEM\\-(?:512|768|1024))$",
+      "standards": [
+        {
+          "name": "FIPS203",
+          "url": "https://doi.org/10.6028/NIST.FIPS.203"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "IKE-PRF",
+      "primitive": "kdf",
+      "pattern": "IKE_PRF_DERIVE[-{hashAlgorithm}]",
+      "regex": "^(?:IKE_PRF_DERIVE(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC2409",
+          "url": "https://doi.org/10.17487/RFC2409"
+        },
+        {
+          "name": "RFC5996",
+          "url": "https://doi.org/10.17487/RFC5996"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "IKE-PRF",
+      "primitive": "kdf",
+      "pattern": "IKE1_(PRF|Extended)_DERIVE[-{hashAlgorithm}]",
+      "regex": "^(?:IKE1_(?:PRF|Extended)_DERIVE(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC2409",
+          "url": "https://doi.org/10.17487/RFC2409"
+        },
+        {
+          "name": "RFC5996",
+          "url": "https://doi.org/10.17487/RFC5996"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "IKE-PRF",
+      "primitive": "kdf",
+      "pattern": "IKE2_PRF_PLUS_DERIVE[-{hashAlgorithm}]",
+      "regex": "^(?:IKE2_PRF_PLUS_DERIVE(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC2409",
+          "url": "https://doi.org/10.17487/RFC2409"
+        },
+        {
+          "name": "RFC5996",
+          "url": "https://doi.org/10.17487/RFC5996"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ANSI-KDF",
+      "primitive": "kdf",
+      "pattern": "ANSI-KDF-X9.42[-{hashAlgorithm}]",
+      "regex": "^(?:ANSI\\-KDF\\-X9\\.42(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "X9.42",
+          "url": "https://webstore.ansi.org/standards/ASCX9/ansix9422003r2013"
+        },
+        {
+          "name": "X9.63",
+          "url": "https://webstore.ansi.org/standards/ASCX9/ansix9632011r2017"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ANSI-KDF",
+      "primitive": "kdf",
+      "pattern": "ANSI-KDF-X9.63[-{hashAlgorithm}]",
+      "regex": "^(?:ANSI\\-KDF\\-X9\\.63(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "X9.42",
+          "url": "https://webstore.ansi.org/standards/ASCX9/ansix9422003r2013"
+        },
+        {
+          "name": "X9.63",
+          "url": "https://webstore.ansi.org/standards/ASCX9/ansix9632011r2017"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SSH-KDF",
+      "primitive": "kdf",
+      "pattern": "SSH-KDF[-{hashAlgorithm}]",
+      "regex": "^(?:SSH\\-KDF(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC4253",
+          "url": "https://doi.org/10.17487/RFC4253"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "TLS-PRF",
+      "primitive": "kdf",
+      "pattern": "TLS1-PRF[-RFC7627]",
+      "regex": "^(?:TLS1\\-PRF(?:\\-RFC7627)?)$",
+      "standards": [
+        {
+          "name": "RFC2246",
+          "url": "https://doi.org/10.17487/RFC2246"
+        },
+        {
+          "name": "RFC5246",
+          "url": "https://doi.org/10.17487/RFC5246"
+        },
+        {
+          "name": "RFC7627",
+          "url": "https://doi.org/10.17487/RFC7627"
+        },
+        {
+          "name": "RFC8446",
+          "url": "https://doi.org/10.17487/RFC8446"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "TLS-PRF",
+      "primitive": "kdf",
+      "pattern": "TLS12-PRF[-RFC7627][-{hashAlgorithm}]",
+      "regex": "^(?:TLS12\\-PRF(?:\\-RFC7627)?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC2246",
+          "url": "https://doi.org/10.17487/RFC2246"
+        },
+        {
+          "name": "RFC5246",
+          "url": "https://doi.org/10.17487/RFC5246"
+        },
+        {
+          "name": "RFC7627",
+          "url": "https://doi.org/10.17487/RFC7627"
+        },
+        {
+          "name": "RFC8446",
+          "url": "https://doi.org/10.17487/RFC8446"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "TLS-PRF",
+      "primitive": "kdf",
+      "pattern": "TLS13-PRF[-{hashAlgorithm}]",
+      "regex": "^(?:TLS13\\-PRF(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC2246",
+          "url": "https://doi.org/10.17487/RFC2246"
+        },
+        {
+          "name": "RFC5246",
+          "url": "https://doi.org/10.17487/RFC5246"
+        },
+        {
+          "name": "RFC7627",
+          "url": "https://doi.org/10.17487/RFC7627"
+        },
+        {
+          "name": "RFC8446",
+          "url": "https://doi.org/10.17487/RFC8446"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "GOST",
+      "primitive": "signature",
+      "pattern": "GOSTR3410",
+      "regex": "^(?:GOSTR3410)$",
+      "standards": [
+        {
+          "name": "RFC4357",
+          "url": "https://doi.org/10.17487/RFC4357"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "GOST",
+      "primitive": "hash",
+      "pattern": "GOSTR3411",
+      "regex": "^(?:GOSTR3411)$",
+      "standards": [
+        {
+          "name": "RFC4357",
+          "url": "https://doi.org/10.17487/RFC4357"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "GOST",
+      "primitive": "mac",
+      "pattern": "GOSTR3411_HMAC",
+      "regex": "^(?:GOSTR3411_HMAC)$",
+      "standards": [
+        {
+          "name": "RFC4357",
+          "url": "https://doi.org/10.17487/RFC4357"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "GOST",
+      "primitive": "block-cipher",
+      "pattern": "GOST28147[-{mode}][-{padding}]",
+      "regex": "^(?:GOST28147(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC4357",
+          "url": "https://doi.org/10.17487/RFC4357"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "GOST",
+      "primitive": "mac",
+      "pattern": "GOST28147_MAC",
+      "regex": "^(?:GOST28147_MAC)$",
+      "standards": [
+        {
+          "name": "RFC4357",
+          "url": "https://doi.org/10.17487/RFC4357"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "GOST",
+      "primitive": "signature",
+      "pattern": "GOSTR3410-2012-(256|512)",
+      "regex": "^(?:GOSTR3410\\-2012\\-(?:256|512))$",
+      "standards": [
+        {
+          "name": "RFC7091",
+          "url": "https://doi.org/10.17487/RFC7091"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "GOST",
+      "primitive": "hash",
+      "pattern": "GOSTR3411-2012-(256|512)",
+      "regex": "^(?:GOSTR3411\\-2012\\-(?:256|512))$",
+      "standards": [
+        {
+          "name": "RFC6986",
+          "url": "https://doi.org/10.17487/RFC6986"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "GOST",
+      "primitive": "mac",
+      "pattern": "HMAC-GOSTR3411-2012-(256|512)",
+      "regex": "^(?:HMAC\\-GOSTR3411\\-2012\\-(?:256|512))$",
+      "standards": [
+        {
+          "name": "RFC7836",
+          "url": "https://doi.org/10.17487/RFC7836"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "GOST",
+      "primitive": "block-cipher",
+      "pattern": "Magma[-{mode}][-{padding}]",
+      "regex": "^(?:Magma(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC8891",
+          "url": "https://doi.org/10.17487/RFC8891"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "GOST",
+      "primitive": "block-cipher",
+      "pattern": "Kuznyechik[-{mode}][-{padding}]",
+      "regex": "^(?:Kuznyechik(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC7801",
+          "url": "https://doi.org/10.17487/RFC7801"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SM2",
+      "primitive": "signature",
+      "pattern": "SM2[-256]",
+      "regex": "^(?:SM2(?:\\-256)?)$",
+      "standards": [
+        {
+          "name": "RFC8998",
+          "url": "https://www.rfc-editor.org/rfc/rfc8998.html"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SM2",
+      "primitive": "pke",
+      "pattern": "SM2-(ENC|ENCRYPTION)[-256]",
+      "regex": "^(?:SM2\\-(?:ENC|ENCRYPTION)(?:\\-256)?)$",
+      "standards": [
+        {
+          "name": "RFC8998",
+          "url": "https://www.rfc-editor.org/rfc/rfc8998.html"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SM2",
+      "primitive": "key-agree",
+      "pattern": "SM2-(KEX|KEYEXCHANGE|KEY-EXCHANGE|KEYAGREE|KEY-AGREE|KEYAGREEMENT|KEY-AGREEMENT)[-256]",
+      "regex": "^(?:SM2\\-(?:KEX|KEYEXCHANGE|KEY\\-EXCHANGE|KEYAGREE|KEY\\-AGREE|KEYAGREEMENT|KEY\\-AGREEMENT)(?:\\-256)?)$",
+      "standards": [
+        {
+          "name": "RFC8998",
+          "url": "https://www.rfc-editor.org/rfc/rfc8998.html"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SM3",
+      "primitive": "hash",
+      "pattern": "SM3",
+      "regex": "^(?:SM3)$",
+      "standards": [
+        {
+          "name": "RFC8998",
+          "url": "https://www.rfc-editor.org/rfc/rfc8998.html"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SM4",
+      "primitive": "block-cipher",
+      "pattern": "SM4[-(ECB|CBC|CFB|OFB|CTR|XTS)][-{padding}][-{ivlen}]",
+      "regex": "^(?:SM4(?:\\-(?:ECB|CBC|CFB|OFB|CTR|XTS))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "ISO/IEC18033-3:2010/Amd1:2021",
+          "url": "https://www.iso.org/standard/81564.html"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SM4",
+      "primitive": "ae",
+      "pattern": "SM4-(GCM|CCM)[-{tagLength}][-{ivLength}]",
+      "regex": "^(?:SM4\\-(?:GCM|CCM)(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "ISO/IEC18033-3:2010/Amd1:2021",
+          "url": "https://www.iso.org/standard/81564.html"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SM9",
+      "primitive": "signature",
+      "pattern": "SM9-(SIG|SIGNATURE)",
+      "regex": "^(?:SM9\\-(?:SIG|SIGNATURE))$",
+      "standards": [
+        {
+          "name": "GM/T0044.1-2016",
+          "url": "https://www.gmbz.org.cn/upload/2025-01-23/1737625691994053970.pdf"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SM9",
+      "primitive": "key-agree",
+      "pattern": "SM9-(KEX|KEYEXCHANGE|KEY-EXCHANGE|KEYAGREE|KEYAGREEMENT|KEY-AGREE|KEY-AGREEMENT)",
+      "regex": "^(?:SM9\\-(?:KEX|KEYEXCHANGE|KEY\\-EXCHANGE|KEYAGREE|KEYAGREEMENT|KEY\\-AGREE|KEY\\-AGREEMENT))$",
+      "standards": [
+        {
+          "name": "GM/T0044.1-2016",
+          "url": "https://www.gmbz.org.cn/upload/2025-01-23/1737625691994053970.pdf"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SM9",
+      "primitive": "kem",
+      "pattern": "SM9-(KEM|KEYENCAPSULATION|KEY-ENCAPSULATION)",
+      "regex": "^(?:SM9\\-(?:KEM|KEYENCAPSULATION|KEY\\-ENCAPSULATION))$",
+      "standards": [
+        {
+          "name": "GM/T0044.1-2016",
+          "url": "https://www.gmbz.org.cn/upload/2025-01-23/1737625691994053970.pdf"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SM9",
+      "primitive": "pke",
+      "pattern": "SM9-(ENC|ENCRYPTION|PKE|PUBLICKEY-ENCRYPTION|PUBLIC-KEY-ENCRYPTION)",
+      "regex": "^(?:SM9\\-(?:ENC|ENCRYPTION|PKE|PUBLICKEY\\-ENCRYPTION|PUBLIC\\-KEY\\-ENCRYPTION))$",
+      "standards": [
+        {
+          "name": "GM/T0044.1-2016",
+          "url": "https://www.gmbz.org.cn/upload/2025-01-23/1737625691994053970.pdf"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SEED",
+      "primitive": "block-cipher",
+      "pattern": "SEED-128[-{mode}][-{padding}]",
+      "regex": "^(?:SEED\\-128(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC4269",
+          "url": "https://doi.org/10.17487/RFC4269"
+        },
+        {
+          "name": "RFC5669",
+          "url": "https://doi.org/10.17487/RFC5669"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SEED",
+      "primitive": "ae",
+      "pattern": "SEED-128[-{mode}][-{padding}]-HMAC[-{hashAlgorithm}][-{tagLength}]",
+      "regex": "^(?:SEED\\-128(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?\\-HMAC(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC4269",
+          "url": "https://doi.org/10.17487/RFC4269"
+        },
+        {
+          "name": "RFC5669",
+          "url": "https://doi.org/10.17487/RFC5669"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SEED",
+      "primitive": "ae",
+      "pattern": "SEED-128-(CCM|GCM)",
+      "regex": "^(?:SEED\\-128\\-(?:CCM|GCM))$",
+      "standards": [
+        {
+          "name": "RFC4269",
+          "url": "https://doi.org/10.17487/RFC4269"
+        },
+        {
+          "name": "RFC5669",
+          "url": "https://doi.org/10.17487/RFC5669"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ARIA",
+      "primitive": "block-cipher",
+      "pattern": "ARIA-(128|192|256)[-{mode}][-{padding}]",
+      "regex": "^(?:ARIA\\-(?:128|192|256)(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC5794",
+          "url": "https://doi.org/10.17487/RFC5794"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ARIA",
+      "primitive": "ae",
+      "pattern": "ARIA-(128|192|256)[-{authmode}][-{padding}]",
+      "regex": "^(?:ARIA\\-(?:128|192|256)(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC5794",
+          "url": "https://doi.org/10.17487/RFC5794"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "CAMELLIA",
+      "primitive": "block-cipher",
+      "pattern": "CAMELLIA-(128|192|256)[-{mode}][-{padding}]",
+      "regex": "^(?:CAMELLIA\\-(?:128|192|256)(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC3713",
+          "url": "https://doi.org/10.17487/RFC3713"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "CAMELLIA",
+      "primitive": "ae",
+      "pattern": "CAMELLIA-(128|192|256)[-{authmode}][-{padding}]",
+      "regex": "^(?:CAMELLIA\\-(?:128|192|256)(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC3713",
+          "url": "https://doi.org/10.17487/RFC3713"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Twofish",
+      "primitive": "block-cipher",
+      "pattern": "Twofish-(128|192|256)[-{mode}][-{padding}]",
+      "regex": "^(?:Twofish\\-(?:128|192|256)(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "Twofish: A 128-Bit Block Cipher",
+          "url": "https://www.schneier.com/academic/twofish/"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Blowfish",
+      "primitive": "block-cipher",
+      "pattern": "Blowfish[-{keyLength}][-{mode}][-{padding}]",
+      "regex": "^(?:Blowfish(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "Description of a new variable-length key, 64-bit block cipher (Blowfish)",
+          "url": "https://doi.org/10.1007/3-540-58108-1_24"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Skipjack",
+      "primitive": "block-cipher",
+      "pattern": "Skipjack[-{mode}][-{padding}]",
+      "regex": "^(?:Skipjack(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "Escrowed Encryption Standard (EES)",
+          "url": "https://doi.org/10.6028/NIST.FIPS.185"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SP800-108",
+      "primitive": "kdf",
+      "pattern": "SP800_108_(CounterKDF|FeedbackKDF|DoublePipelineKDF|KMAC)[-{prfFunction}][-{dkmLength}]",
+      "regex": "^(?:SP800_108_(?:CounterKDF|FeedbackKDF|DoublePipelineKDF|KMAC)(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-108",
+          "url": "https://doi.org/10.6028/NIST.SP.800-108r1-upd1"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SP800-56C",
+      "primitive": "kdf",
+      "pattern": "SP800_56C_OneStep[-{auxFunction}][-{dkmLength}]",
+      "regex": "^(?:SP800_56C_OneStep(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-56C",
+          "url": "https://doi.org/10.6028/NIST.SP.800-56Cr2"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SP800-56C",
+      "primitive": "kdf",
+      "pattern": "SP800_56C_TwoStep_(CounterKDF|FeedbackKDF|DoublePipelineKDF)[-{auxFunction}][-{dkmLength}]",
+      "regex": "^(?:SP800_56C_TwoStep_(?:CounterKDF|FeedbackKDF|DoublePipelineKDF)(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-56C",
+          "url": "https://doi.org/10.6028/NIST.SP.800-56Cr2"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "BLAKE2",
+      "primitive": "hash",
+      "pattern": "BLAKE2b-(160|256|384|512)",
+      "regex": "^(?:BLAKE2b\\-(?:160|256|384|512))$",
+      "standards": [
+        {
+          "name": "RFC7693",
+          "url": "https://doi.org/10.17487/RFC7693"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "BLAKE2",
+      "primitive": "mac",
+      "pattern": "BLAKE2b-(160|256|384|512)-HMAC",
+      "regex": "^(?:BLAKE2b\\-(?:160|256|384|512)\\-HMAC)$",
+      "standards": [
+        {
+          "name": "RFC7693",
+          "url": "https://doi.org/10.17487/RFC7693"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "BLAKE2",
+      "primitive": "hash",
+      "pattern": "BLAKE2s-(160|256)",
+      "regex": "^(?:BLAKE2s\\-(?:160|256))$",
+      "standards": [
+        {
+          "name": "RFC7693",
+          "url": "https://doi.org/10.17487/RFC7693"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "BLAKE2",
+      "primitive": "mac",
+      "pattern": "BLAKE2s-(160|256)-HMAC",
+      "regex": "^(?:BLAKE2s\\-(?:160|256)\\-HMAC)$",
+      "standards": [
+        {
+          "name": "RFC7693",
+          "url": "https://doi.org/10.17487/RFC7693"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "BLAKE3",
+      "primitive": "hash",
+      "pattern": "BLAKE3[-{outputLength}]",
+      "regex": "^(?:BLAKE3(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "BLAKE3 Spec",
+          "url": "https://github.com/BLAKE3-team/BLAKE3-specs/blob/master/blake3.pdf"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "X3DH",
+      "primitive": "key-agree",
+      "pattern": "X3DH[-{hashAlgorithm}]",
+      "regex": "^(?:X3DH(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "The X3DH Key Agreement Protocol",
+          "url": "https://signal.org/docs/specifications/x3dh/"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "BLS",
+      "primitive": "signature",
+      "pattern": "BLS(12-381|12-377|BN254)",
+      "regex": "^(?:BLS(?:12\\-381|12\\-377|BN254))$",
+      "standards": [
+        {
+          "name": "Short Signatures from the Weil Pairing",
+          "url": "https://dx.doi.org/10.1007/3-540-45682-1_30"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "BLS",
+      "primitive": "signature",
+      "pattern": "BLS[-{ellipticCurve}]",
+      "regex": "^(?:BLS(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "Short Signatures from the Weil Pairing",
+          "url": "https://dx.doi.org/10.1007/3-540-45682-1_30"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "OPAQUE",
+      "primitive": "key-agree",
+      "pattern": "OPAQUE-3DH[-{group}][-{hashAlgorithm}][-{ksf}][-{kdf}][-{mac}]",
+      "regex": "^(?:OPAQUE\\-3DH(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC9807",
+          "url": "https://doi.org/10.17487/RFC9807"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "MILENAGE",
+      "primitive": "mac",
+      "pattern": "MILENAGE[-MAC]",
+      "regex": "^(?:MILENAGE(?:\\-MAC)?)$",
+      "standards": [
+        {
+          "name": "3GPP TS 35.206",
+          "url": "https://www.3gpp.org/ftp/Specs/archive/35_series/35.206/35206-i00.zip"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "MILENAGE",
+      "primitive": "kdf",
+      "pattern": "MILENAGE[-KDF]",
+      "regex": "^(?:MILENAGE(?:\\-KDF)?)$",
+      "standards": [
+        {
+          "name": "3GPP TS 35.206",
+          "url": "https://www.3gpp.org/ftp/Specs/archive/35_series/35.206/35206-i00.zip"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SPAKE2",
+      "primitive": "key-agree",
+      "pattern": "SPAKE2[-{group}][-{hashAlgorithm}][-{kdf}][-{mac}]",
+      "regex": "^(?:SPAKE2(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC9382",
+          "url": "https://doi.org/10.17487/RFC9382"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SPAKE2PLUS",
+      "primitive": "key-agree",
+      "pattern": "SPAKE2+[-{group}][-{hashAlgorithm}][-{kdf}][-{mac}]",
+      "regex": "^(?:SPAKE2\\+(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC9383",
+          "url": "https://doi.org/10.17487/RFC9383"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "TUAK",
+      "primitive": "mac",
+      "pattern": "TUAK[-MAC]",
+      "regex": "^(?:TUAK(?:\\-MAC)?)$",
+      "standards": [
+        {
+          "name": "SHA-3 based authentication algorithm (3GPP TS 35.231)",
+          "url": "https://www.3gpp.org/ftp/Specs/archive/35_series/35.231/35231-i00.zip"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "TUAK",
+      "primitive": "kdf",
+      "pattern": "TUAK[-KDF]",
+      "regex": "^(?:TUAK(?:\\-KDF)?)$",
+      "standards": [
+        {
+          "name": "SHA-3 based authentication algorithm (3GPP TS 35.231)",
+          "url": "https://www.3gpp.org/ftp/Specs/archive/35_series/35.231/35231-i00.zip"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ZUC",
+      "primitive": "stream-cipher",
+      "pattern": "128-EEA3",
+      "regex": "^(?:128\\-EEA3)$",
+      "standards": [
+        {
+          "name": "3GPP TS 35.221",
+          "url": "https://www.3gpp.org/ftp/Specs/archive/35_series/35.221/35221-i00.zip"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "ZUC",
+      "primitive": "mac",
+      "pattern": "128-EIA3",
+      "regex": "^(?:128\\-EIA3)$",
+      "standards": [
+        {
+          "name": "3GPP TS 35.221",
+          "url": "https://www.3gpp.org/ftp/Specs/archive/35_series/35.221/35221-i00.zip"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SNOW3G",
+      "primitive": "stream-cipher",
+      "pattern": "128-EEA1",
+      "regex": "^(?:128\\-EEA1)$",
+      "standards": [
+        {
+          "name": "3GPP TS 35.216",
+          "url": "https://www.3gpp.org/ftp/Specs/archive/35_series/35.216/35216-i00.zip"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SNOW3G",
+      "primitive": "mac",
+      "pattern": "128-EIA1",
+      "regex": "^(?:128\\-EIA1)$",
+      "standards": [
+        {
+          "name": "3GPP TS 35.216",
+          "url": "https://www.3gpp.org/ftp/Specs/archive/35_series/35.216/35216-i00.zip"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "3GPP-XOR",
+      "primitive": "mac",
+      "pattern": "3GPP-XOR[-MAC]",
+      "regex": "^(?:3GPP\\-XOR(?:\\-MAC)?)$",
+      "standards": [
+        {
+          "name": "Legacy XOR-based AV generation algorithm (3GPP TS 35.201)",
+          "url": "https://www.3gpp.org/ftp/Specs/archive/35_series/35.201/35201-i00.zip"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "3GPP-XOR",
+      "primitive": "kdf",
+      "pattern": "3GPP-XOR[-KDF]",
+      "regex": "^(?:3GPP\\-XOR(?:\\-KDF)?)$",
+      "standards": [
+        {
+          "name": "Legacy XOR-based AV generation algorithm (3GPP TS 35.201)",
+          "url": "https://www.3gpp.org/ftp/Specs/archive/35_series/35.201/35201-i00.zip"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "MD2",
+      "primitive": "hash",
+      "pattern": "MD2",
+      "regex": "^(?:MD2)$",
+      "standards": [
+        {
+          "name": "RFC1319",
+          "url": "https://doi.org/10.17487/RFC1319"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "MD4",
+      "primitive": "hash",
+      "pattern": "MD4",
+      "regex": "^(?:MD4)$",
+      "standards": [
+        {
+          "name": "RFC1320",
+          "url": "https://doi.org/10.17487/RFC1320"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "MD5",
+      "primitive": "hash",
+      "pattern": "MD5",
+      "regex": "^(?:MD5)$",
+      "standards": [
+        {
+          "name": "RFC1321",
+          "url": "https://doi.org/10.17487/RFC1321"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "RIPEMD",
+      "primitive": "hash",
+      "pattern": "RIPEMD-(128|160|256|320)",
+      "regex": "^(?:RIPEMD\\-(?:128|160|256|320))$",
+      "standards": [
+        {
+          "name": "ISO10118-3",
+          "url": "https://www.iso.org/standard/67116.html"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Whirlpool",
+      "primitive": "hash",
+      "pattern": "Whirlpool",
+      "regex": "^(?:Whirlpool)$",
+      "standards": [
+        {
+          "name": "ISO10118-3",
+          "url": "https://www.iso.org/standard/67116.html"
+        },
+        {
+          "name": "NESSIE",
+          "url": "https://www.cosic.esat.kuleuven.be/nessie/"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Serpent",
+      "primitive": "block-cipher",
+      "pattern": "Serpent-(128|192|256)[-{mode}][-{padding}]",
+      "regex": "^(?:Serpent\\-(?:128|192|256)(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "AES Finalist",
+          "url": "https://www.cl.cam.ac.uk/~rja14/serpent.html"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "CAST5",
+      "primitive": "block-cipher",
+      "pattern": "CAST5[-{keyLength}][-{mode}]",
+      "regex": "^(?:CAST5(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC2144",
+          "url": "https://doi.org/10.17487/RFC2144"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "CAST6",
+      "primitive": "block-cipher",
+      "pattern": "CAST6[-{keyLength}][-{mode}]",
+      "regex": "^(?:CAST6(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC2612",
+          "url": "https://doi.org/10.17487/RFC2612"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "RC5",
+      "primitive": "block-cipher",
+      "pattern": "RC5[-{keyLength}][-{mode}]",
+      "regex": "^(?:RC5(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC2040",
+          "url": "https://doi.org/10.17487/RFC2040"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "RC6",
+      "primitive": "block-cipher",
+      "pattern": "RC6[-{keyLength}][-{mode}]",
+      "regex": "^(?:RC6(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "The RC6 Block Cipher",
+          "url": "https://web.archive.org/web/20181223080309/http://people.csail.mit.edu/rivest/rc6.pdf"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "HC",
+      "primitive": "stream-cipher",
+      "pattern": "HC-128",
+      "regex": "^(?:HC\\-128)$",
+      "standards": [
+        {
+          "name": "eSTREAM",
+          "url": "https://www.ecrypt.eu.org/stream/"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "HC",
+      "primitive": "stream-cipher",
+      "pattern": "HC-256",
+      "regex": "^(?:HC\\-256)$",
+      "standards": [
+        {
+          "name": "eSTREAM",
+          "url": "https://www.ecrypt.eu.org/stream/"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "RABBIT",
+      "primitive": "stream-cipher",
+      "pattern": "RABBIT",
+      "regex": "^(?:RABBIT)$",
+      "standards": [
+        {
+          "name": "RFC4503",
+          "url": "https://doi.org/10.17487/RFC4503"
+        },
+        {
+          "name": "eSTREAM",
+          "url": "https://www.ecrypt.eu.org/stream/"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Ascon",
+      "primitive": "ae",
+      "pattern": "Ascon-AEAD128",
+      "regex": "^(?:Ascon\\-AEAD128)$",
+      "standards": [
+        {
+          "name": "NIST SP 800-232",
+          "url": "https://doi.org/10.6028/NIST.SP.800-232"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Ascon",
+      "primitive": "hash",
+      "pattern": "Ascon-Hash256",
+      "regex": "^(?:Ascon\\-Hash256)$",
+      "standards": [
+        {
+          "name": "NIST SP 800-232",
+          "url": "https://doi.org/10.6028/NIST.SP.800-232"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Ascon",
+      "primitive": "xof",
+      "pattern": "Ascon-XOF128",
+      "regex": "^(?:Ascon\\-XOF128)$",
+      "standards": [
+        {
+          "name": "NIST SP 800-232",
+          "url": "https://doi.org/10.6028/NIST.SP.800-232"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Ascon",
+      "primitive": "xof",
+      "pattern": "Ascon-CXOF128",
+      "regex": "^(?:Ascon\\-CXOF128)$",
+      "standards": [
+        {
+          "name": "NIST SP 800-232",
+          "url": "https://doi.org/10.6028/NIST.SP.800-232"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "SipHash",
+      "primitive": "mac",
+      "pattern": "SipHash[-{compressionRounds}-{finalizationRounds}]",
+      "regex": "^(?:SipHash(?:\\-([^\\s]+?)\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SipHash Spec",
+          "url": "https://doi.org/10.1007/978-3-642-34931-7_28"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Argon2",
+      "primitive": "kdf",
+      "pattern": "Argon2(id|i|d)[-{memoryKiB}][-{passes}][-{parallelism}][-{saltLenBytes}][-{secretLenBytes}][-{associatedDataLenBytes}][-{tagLenBytes}]",
+      "regex": "^(?:Argon2(?:id|i|d)(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC9106",
+          "url": "https://doi.org/10.17487/RFC9106"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "PBKDF1",
+      "primitive": "kdf",
+      "pattern": "PBKDF1[-{hashAlgorithm}][-{iterations}][-{dkLen}]",
+      "regex": "^(?:PBKDF1(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC8018",
+          "url": "https://doi.org/10.17487/RFC8018"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "PBKDF2",
+      "primitive": "kdf",
+      "pattern": "PBKDF2[-{hashAlgorithm}][-{iterations}][-{dkLen}]",
+      "regex": "^(?:PBKDF2(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC8018",
+          "url": "https://doi.org/10.17487/RFC8018"
+        },
+        {
+          "name": "SP800-132",
+          "url": "https://doi.org/10.6028/NIST.SP.800-132"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "PBES1",
+      "primitive": "other",
+      "pattern": "PBES1[-{encryptionAlgorithm}][-{hashAlgorithm}][-{dkLen}][-{iterations}]",
+      "regex": "^(?:PBES1(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC8018",
+          "url": "https://doi.org/10.17487/RFC8018"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "PBES2",
+      "primitive": "other",
+      "pattern": "PBES2[-{encryptionAlgorithm}][-{kdf}][-{dkLen}][-{iterations}]",
+      "regex": "^(?:PBES2(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC8018",
+          "url": "https://doi.org/10.17487/RFC8018"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "PBMAC1",
+      "primitive": "mac",
+      "pattern": "PBMAC1[-{macAlgorithm}][-{hashAlgorithm}][-{iterations}][-{dkLen}]",
+      "regex": "^(?:PBMAC1(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC8018",
+          "url": "https://doi.org/10.17487/RFC8018"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "bcrypt",
+      "primitive": "kdf",
+      "pattern": "bcrypt[-{cost}]",
+      "regex": "^(?:bcrypt(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "A Future-Adaptable Password Scheme",
+          "url": "https://www.usenix.org/legacy/events/usenix99/provos/provos.pdf"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "scrypt",
+      "primitive": "kdf",
+      "pattern": "scrypt[-{N}][-{r}][-{p}][-{dkLen}]",
+      "regex": "^(?:scrypt(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "RFC7914",
+          "url": "https://doi.org/10.17487/RFC7914"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "yescrypt",
+      "primitive": "kdf",
+      "pattern": "[{hashAlgorithm}-]yescrypt[-{N_log2}][-{r}][-{p}][-{t}]",
+      "regex": "^(?:(?:([^\\s]+?)\\-)?yescrypt(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "yescrypt - scalable KDF and password hashing scheme",
+          "url": "https://www.openwall.com/yescrypt/"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "A5/1",
+      "primitive": "stream-cipher",
+      "pattern": "A5/1",
+      "regex": "^(?:A5/1)$",
+      "standards": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "A5/2",
+      "primitive": "stream-cipher",
+      "pattern": "A5/2",
+      "regex": "^(?:A5/2)$",
+      "standards": [
+        {
+          "name": "ETSI ETR 278",
+          "url": "https://www.etsi.org/deliver/etsi_etr/200_299/278/01_60/etr_278e01p.pdf"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "CMEA",
+      "primitive": "block-cipher",
+      "pattern": "CMEA",
+      "regex": "^(?:CMEA)$",
+      "standards": [
+        {
+          "name": "TIA TR45.0.A",
+          "url": "https://patents.google.com/patent/US5159634"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Fortuna",
+      "primitive": "drbg",
+      "pattern": "Fortuna[-{blockCipher}][-{hashAlgorithm}]",
+      "regex": "^(?:Fortuna(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "Fortuna - A secure pseudorandom number generator",
+          "url": "https://www.schneier.com/academic/fortuna"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Yarrow",
+      "primitive": "drbg",
+      "pattern": "Yarrow[-{blockCipher}][-{hashAlgorithm}]",
+      "regex": "^(?:Yarrow(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "Yarrow - A secure pseudorandom number generator",
+          "url": "https://www.schneier.com/academic/yarrow"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "CTR_DRBG",
+      "primitive": "drbg",
+      "pattern": "CTR_DRBG[-{cipherAlgorithm}][-{keyLength}]",
+      "regex": "^(?:CTR_DRBG(?:\\-([^\\s]+?))?(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-90Ar1",
+          "url": "https://doi.org/10.6028/NIST.SP.800-90Ar1"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "Hash_DRBG",
+      "primitive": "drbg",
+      "pattern": "Hash_DRBG[-{hashAlgorithm}]",
+      "regex": "^(?:Hash_DRBG(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-90Ar1",
+          "url": "https://doi.org/10.6028/NIST.SP.800-90Ar1"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "family": "HMAC_DRBG",
+      "primitive": "drbg",
+      "pattern": "HMAC_DRBG[-{hashAlgorithm}]",
+      "regex": "^(?:HMAC_DRBG(?:\\-([^\\s]+?))?)$",
+      "standards": [
+        {
+          "name": "SP800-90Ar1",
+          "url": "https://doi.org/10.6028/NIST.SP.800-90Ar1"
+        }
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    }
+  ]
+}

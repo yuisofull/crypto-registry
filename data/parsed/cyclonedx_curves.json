@@ -1,0 +1,2954 @@
+{
+  "generated_at_utc": "2026-11-23T08:02:08Z",
+  "sources": [
+    {
+      "id": "cyclonedx-registry",
+      "repo": "CycloneDX/specification",
+      "branch": "master",
+      "commit": "5fee6af48d43c751dc6a5b31138f06af2b10bac5",
+      "files": [
+        {
+          "path": "schema/cryptography-defs.json",
+          "url": "https://raw.githubusercontent.com/CycloneDX/specification/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+          "permalink": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+          "sha256": "b2f4b7f1b52fa8948160465724066d110c497d847cf81f12550b0f72dd13c193",
+          "bytes": 110013
+        }
+      ]
+    }
+  ],
+  "count": 246,
+  "registry_last_updated": "2026-02-24T00:00:00Z",
+  "records": [
+    {
+      "name": "FRP256v1",
+      "group": "anssi",
+      "oid": "1.2.250.1.223.101.256.1",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "BLS12-377",
+      "group": "bls",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "BLS12-381",
+      "group": "bls",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "BLS12-446",
+      "group": "bls",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "BLS12-455",
+      "group": "bls",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "BLS12-638",
+      "group": "bls",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "BLS24-477",
+      "group": "bls",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Bandersnatch",
+      "group": "bls",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn158",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn190",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn222",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn254",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [
+        "Fp254BNb"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn286",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn318",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn350",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn382",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn414",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn446",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn478",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn510",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn542",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn574",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn606",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "bn638",
+      "group": "bn",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP160r1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.1",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP160t1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.2",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP192r1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.3",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP192t1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.4",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP224r1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.5",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP224t1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.6",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP256r1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.7",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP256t1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.8",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP320r1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.9",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP320t1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.10",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP384r1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.11",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP384t1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.12",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP512r1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.13",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "brainpoolP512t1",
+      "group": "brainpool",
+      "oid": "1.3.36.3.3.2.8.1.1.14",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "gost256",
+      "group": "gost",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "gost512",
+      "group": "gost",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "id-GostR3410-2001-CryptoPro-A-ParamSet",
+      "group": "gost",
+      "oid": "1.2.643.2.2.35.1",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "id-GostR3410-2001-CryptoPro-B-ParamSet",
+      "group": "gost",
+      "oid": "1.2.643.2.2.35.2",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "id-GostR3410-2001-CryptoPro-C-ParamSet",
+      "group": "gost",
+      "oid": "1.2.643.2.2.35.3",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "id-tc26-gost-3410-12-512-paramSetA",
+      "group": "gost",
+      "oid": "1.2.643.7.1.2.1.2.1",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "id-tc26-gost-3410-12-512-paramSetB",
+      "group": "gost",
+      "oid": "1.2.643.7.1.2.1.2.2",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "id-tc26-gost-3410-2012-256-paramSetA",
+      "group": "gost",
+      "oid": "1.2.643.7.1.2.1.1.1",
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "id-tc26-gost-3410-2012-512-paramSetC",
+      "group": "gost",
+      "oid": "1.2.643.7.1.2.1.2.3",
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "mnt1",
+      "group": "mnt",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "mnt2/1",
+      "group": "mnt",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "mnt2/2",
+      "group": "mnt",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "mnt3/1",
+      "group": "mnt",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "mnt3/2",
+      "group": "mnt",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "mnt3/3",
+      "group": "mnt",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "mnt4",
+      "group": "mnt",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "mnt5/1",
+      "group": "mnt",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "mnt5/2",
+      "group": "mnt",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "mnt5/3",
+      "group": "mnt",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "B-163",
+      "group": "nist",
+      "oid": "1.3.132.0.15",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect163r2",
+        "ansit163r2"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "B-233",
+      "group": "nist",
+      "oid": "1.3.132.0.27",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect233r1",
+        "wap-wsg-idm-ecid-wtls11",
+        "ansit233r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "B-283",
+      "group": "nist",
+      "oid": "1.3.132.0.17",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect283r1",
+        "ansit283r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "B-409",
+      "group": "nist",
+      "oid": "1.3.132.0.37",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect409r1",
+        "ansit409r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "B-571",
+      "group": "nist",
+      "oid": "1.3.132.0.39",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect571r1",
+        "ansit571r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "K-163",
+      "group": "nist",
+      "oid": "1.3.132.0.1",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect163k1",
+        "ansit163k1",
+        "wap-wsg-idm-ecid-wtls3"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "K-233",
+      "group": "nist",
+      "oid": "1.3.132.0.26",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect233k1",
+        "wap-wsg-idm-ecid-wtls10",
+        "ansit233k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "K-283",
+      "group": "nist",
+      "oid": "1.3.132.0.16",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect283k1",
+        "ansit283k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "K-409",
+      "group": "nist",
+      "oid": "1.3.132.0.36",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect409k1",
+        "ansit409k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "K-571",
+      "group": "nist",
+      "oid": "1.3.132.0.38",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect571k1",
+        "ansit571k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "P-192",
+      "group": "nist",
+      "oid": "1.2.840.10045.3.1.1",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp192r1",
+        "prime192v1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "P-224",
+      "group": "nist",
+      "oid": "1.3.132.0.33",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp224r1",
+        "wap-wsg-idm-ecid-wtls12",
+        "ansip224r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "P-256",
+      "group": "nist",
+      "oid": "1.2.840.10045.3.1.7",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp256r1",
+        "prime256v1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "P-384",
+      "group": "nist",
+      "oid": "1.3.132.0.34",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp384r1",
+        "ansip384r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "P-521",
+      "group": "nist",
+      "oid": "1.3.132.0.35",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp521r1",
+        "ansip521r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ed-254-mont",
+      "group": "nums",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ed-255-mers",
+      "group": "nums",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ed-256-mont",
+      "group": "nums",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ed-382-mont",
+      "group": "nums",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ed-383-mers",
+      "group": "nums",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ed-384-mont",
+      "group": "nums",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ed-510-mont",
+      "group": "nums",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ed-511-mers",
+      "group": "nums",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ed-512-mont",
+      "group": "nums",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "numsp256d1",
+      "group": "nums",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "numsp256t1",
+      "group": "nums",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "numsp384d1",
+      "group": "nums",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "numsp384t1",
+      "group": "nums",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "numsp512d1",
+      "group": "nums",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "numsp512t1",
+      "group": "nums",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "w-254-mont",
+      "group": "nums",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "w-255-mers",
+      "group": "nums",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "w-256-mont",
+      "group": "nums",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "w-382-mont",
+      "group": "nums",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "w-383-mers",
+      "group": "nums",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "w-384-mont",
+      "group": "nums",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "w-510-mont",
+      "group": "nums",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "w-511-mers",
+      "group": "nums",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "w-512-mont",
+      "group": "nums",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "192-bit Random ECP Group",
+      "group": "oakley",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "224-bit Random ECP Group",
+      "group": "oakley",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "256-bit Random ECP Group",
+      "group": "oakley",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "384-bit Random ECP Group",
+      "group": "oakley",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "521-bit Random ECP Group",
+      "group": "oakley",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Oakley Group 3",
+      "group": "oakley",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Oakley Group 4",
+      "group": "oakley",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "SM2",
+      "group": "oscaa",
+      "oid": "1.2.156.10197.1.301",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "BADA55-R-256",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "BADA55-VPR-224",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "BADA55-VPR2-224",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "BADA55-VR-224",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "BADA55-VR-256",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "BADA55-VR-384",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Curve1174",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Curve22103",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Curve25519",
+      "group": "other",
+      "oid": null,
+      "form": "Montgomery",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Curve383187",
+      "group": "other",
+      "oid": null,
+      "form": "Montgomery",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Curve41417",
+      "group": "other",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Curve4417",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Curve448",
+      "group": "other",
+      "oid": null,
+      "form": "Montgomery",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Curve67254",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "E-222",
+      "group": "other",
+      "oid": null,
+      "form": "Edwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "E-382",
+      "group": "other",
+      "oid": null,
+      "form": "Edwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "E-521",
+      "group": "other",
+      "oid": null,
+      "form": "Edwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Ed25519",
+      "group": "other",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Ed448",
+      "group": "other",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Ed448-Goldilocks",
+      "group": "other",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "FourQ",
+      "group": "other",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Fp224BN",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Fp254BNa",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Fp254BNb",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [
+        "bn254"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Fp254n2BNa",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Fp256BN",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Fp384BN",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Fp512BN",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "JubJub",
+      "group": "other",
+      "oid": null,
+      "form": "TwistedEdwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "M-221",
+      "group": "other",
+      "oid": null,
+      "form": "Montgomery",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "M-383",
+      "group": "other",
+      "oid": null,
+      "form": "Montgomery",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "M-511",
+      "group": "other",
+      "oid": null,
+      "form": "Montgomery",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "MDC201601",
+      "group": "other",
+      "oid": null,
+      "form": "Edwards",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Pallas",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Tom-256",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Tom-384",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Tom-521",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Tweedledee",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Tweedledum",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "Vesta",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ssc-160",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ssc-192",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ssc-224",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ssc-256",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ssc-288",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ssc-320",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ssc-384",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ssc-512",
+      "group": "other",
+      "oid": null,
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp112r1",
+      "group": "secg",
+      "oid": "1.3.132.0.6",
+      "form": "Weierstrass",
+      "aliases": [
+        "wap-wsg-idm-ecid-wtls6"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp112r2",
+      "group": "secg",
+      "oid": "1.3.132.0.7",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp128r1",
+      "group": "secg",
+      "oid": "1.3.132.0.28",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp128r2",
+      "group": "secg",
+      "oid": "1.3.132.0.29",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp160k1",
+      "group": "secg",
+      "oid": "1.3.132.0.9",
+      "form": "Weierstrass",
+      "aliases": [
+        "ansip160k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp160r1",
+      "group": "secg",
+      "oid": "1.3.132.0.8",
+      "form": "Weierstrass",
+      "aliases": [
+        "wap-wsg-idm-ecid-wtls7",
+        "ansip160r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp160r2",
+      "group": "secg",
+      "oid": "1.3.132.0.30",
+      "form": "Weierstrass",
+      "aliases": [
+        "ansip160r2"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp192k1",
+      "group": "secg",
+      "oid": "1.3.132.0.31",
+      "form": "Weierstrass",
+      "aliases": [
+        "ansip192k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp192r1",
+      "group": "secg",
+      "oid": "1.2.840.10045.3.1.1",
+      "form": "Weierstrass",
+      "aliases": [
+        "P-192",
+        "prime192v1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp224k1",
+      "group": "secg",
+      "oid": "1.3.132.0.32",
+      "form": "Weierstrass",
+      "aliases": [
+        "ansip224k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp224r1",
+      "group": "secg",
+      "oid": "1.3.132.0.33",
+      "form": "Weierstrass",
+      "aliases": [
+        "P-224",
+        "wap-wsg-idm-ecid-wtls12",
+        "ansip224r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp256k1",
+      "group": "secg",
+      "oid": "1.3.132.0.10",
+      "form": "Weierstrass",
+      "aliases": [
+        "ansip256k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp256r1",
+      "group": "secg",
+      "oid": "1.2.840.10045.3.1.7",
+      "form": "Weierstrass",
+      "aliases": [
+        "P-256",
+        "prime256v1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp384r1",
+      "group": "secg",
+      "oid": "1.3.132.0.34",
+      "form": "Weierstrass",
+      "aliases": [
+        "P-384",
+        "ansip384r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "secp521r1",
+      "group": "secg",
+      "oid": "1.3.132.0.35",
+      "form": "Weierstrass",
+      "aliases": [
+        "P-521",
+        "ansip521r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect113r1",
+      "group": "secg",
+      "oid": "1.3.132.0.4",
+      "form": "Weierstrass",
+      "aliases": [
+        "wap-wsg-idm-ecid-wtls4"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect113r2",
+      "group": "secg",
+      "oid": "1.3.132.0.5",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect131r1",
+      "group": "secg",
+      "oid": "1.3.132.0.22",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect131r2",
+      "group": "secg",
+      "oid": "1.3.132.0.23",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect163k1",
+      "group": "secg",
+      "oid": "1.3.132.0.1",
+      "form": "Weierstrass",
+      "aliases": [
+        "K-163",
+        "ansit163k1",
+        "wap-wsg-idm-ecid-wtls3"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect163r1",
+      "group": "secg",
+      "oid": "1.3.132.0.2",
+      "form": "Weierstrass",
+      "aliases": [
+        "ansit163r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect163r2",
+      "group": "secg",
+      "oid": "1.3.132.0.15",
+      "form": "Weierstrass",
+      "aliases": [
+        "B-163",
+        "ansit163r2"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect193r1",
+      "group": "secg",
+      "oid": "1.3.132.0.24",
+      "form": "Weierstrass",
+      "aliases": [
+        "ansit193r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect193r2",
+      "group": "secg",
+      "oid": "1.3.132.0.25",
+      "form": "Weierstrass",
+      "aliases": [
+        "ansit193r2"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect233k1",
+      "group": "secg",
+      "oid": "1.3.132.0.26",
+      "form": "Weierstrass",
+      "aliases": [
+        "K-233",
+        "wap-wsg-idm-ecid-wtls10",
+        "ansit233k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect233r1",
+      "group": "secg",
+      "oid": "1.3.132.0.27",
+      "form": "Weierstrass",
+      "aliases": [
+        "B-233",
+        "wap-wsg-idm-ecid-wtls11",
+        "ansit233r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect239k1",
+      "group": "secg",
+      "oid": "1.3.132.0.3",
+      "form": "Weierstrass",
+      "aliases": [
+        "ansit239k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect283k1",
+      "group": "secg",
+      "oid": "1.3.132.0.16",
+      "form": "Weierstrass",
+      "aliases": [
+        "K-283",
+        "ansit283k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect283r1",
+      "group": "secg",
+      "oid": "1.3.132.0.17",
+      "form": "Weierstrass",
+      "aliases": [
+        "B-283",
+        "ansit283r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect409k1",
+      "group": "secg",
+      "oid": "1.3.132.0.36",
+      "form": "Weierstrass",
+      "aliases": [
+        "K-409",
+        "ansit409k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect409r1",
+      "group": "secg",
+      "oid": "1.3.132.0.37",
+      "form": "Weierstrass",
+      "aliases": [
+        "B-409",
+        "ansit409r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect571k1",
+      "group": "secg",
+      "oid": "1.3.132.0.38",
+      "form": "Weierstrass",
+      "aliases": [
+        "K-571",
+        "ansit571k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "sect571r1",
+      "group": "secg",
+      "oid": "1.3.132.0.39",
+      "form": "Weierstrass",
+      "aliases": [
+        "B-571",
+        "ansit571r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "wap-wsg-idm-ecid-wtls1",
+      "group": "wtls",
+      "oid": "2.23.43.1.4.1",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "wap-wsg-idm-ecid-wtls10",
+      "group": "wtls",
+      "oid": "2.23.43.1.4.10",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect233k1",
+        "K-233",
+        "ansit233k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "wap-wsg-idm-ecid-wtls11",
+      "group": "wtls",
+      "oid": "2.23.43.1.4.11",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect233r1",
+        "B-233",
+        "ansit233r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "wap-wsg-idm-ecid-wtls12",
+      "group": "wtls",
+      "oid": "2.23.43.1.4.12",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp224r1",
+        "P-224",
+        "ansip224r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "wap-wsg-idm-ecid-wtls3",
+      "group": "wtls",
+      "oid": "2.23.43.1.4.3",
+      "form": "Weierstrass",
+      "aliases": [
+        "K-163",
+        "sect163k1",
+        "ansit163k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "wap-wsg-idm-ecid-wtls4",
+      "group": "wtls",
+      "oid": "2.23.43.1.4.4",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect113r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "wap-wsg-idm-ecid-wtls5",
+      "group": "wtls",
+      "oid": "2.23.43.1.4.5",
+      "form": "Weierstrass",
+      "aliases": [
+        "c2pnb163v1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "wap-wsg-idm-ecid-wtls6",
+      "group": "wtls",
+      "oid": "2.23.43.1.4.6",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp112r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "wap-wsg-idm-ecid-wtls7",
+      "group": "wtls",
+      "oid": "2.23.43.1.4.7",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp160r1",
+        "ansip160r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "wap-wsg-idm-ecid-wtls8",
+      "group": "wtls",
+      "oid": "2.23.43.1.4.8",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "wap-wsg-idm-ecid-wtls9",
+      "group": "wtls",
+      "oid": "2.23.43.1.4.9",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2onb191v4",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.8",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2onb191v5",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.9",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2onb239v4",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.14",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2onb239v5",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.15",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2pnb163v1",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.1",
+      "form": "Weierstrass",
+      "aliases": [
+        "wap-wsg-idm-ecid-wtls5"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2pnb163v2",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.2",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2pnb163v3",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.3",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2pnb176w1",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.4",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2pnb208w1",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.10",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2pnb272w1",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.16",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2pnb304w1",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.17",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2pnb368w1",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.19",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2tnb191v1",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.5",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2tnb191v2",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.6",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2tnb191v3",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.7",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2tnb239v1",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.11",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2tnb239v2",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.12",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2tnb239v3",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.13",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2tnb359v1",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.18",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "c2tnb431r1",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.0.20",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "prime192v1",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.1.1",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp192r1",
+        "P-192"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "prime192v2",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.1.2",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "prime192v3",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.1.3",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "prime239v1",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.1.4",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "prime239v2",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.1.5",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "prime239v3",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.1.6",
+      "form": "Weierstrass",
+      "aliases": [],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "prime256v1",
+      "group": "x962",
+      "oid": "1.2.840.10045.3.1.7",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp256r1",
+        "P-256"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansip160k1",
+      "group": "x963",
+      "oid": "1.3.132.0.9",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp160k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansip160r1",
+      "group": "x963",
+      "oid": "1.3.132.0.8",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp160r1",
+        "wap-wsg-idm-ecid-wtls7"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansip160r2",
+      "group": "x963",
+      "oid": "1.3.132.0.30",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp160r2"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansip192k1",
+      "group": "x963",
+      "oid": "1.3.132.0.31",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp192k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansip224k1",
+      "group": "x963",
+      "oid": "1.3.132.0.32",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp224k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansip224r1",
+      "group": "x963",
+      "oid": "1.3.132.0.33",
+      "form": "Weierstrass",
+      "aliases": [
+        "wap-wsg-idm-ecid-wtls12",
+        "P-224",
+        "secp224r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansip256k1",
+      "group": "x963",
+      "oid": "1.3.132.0.10",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp256k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansip384r1",
+      "group": "x963",
+      "oid": "1.3.132.0.34",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp384r1",
+        "P-384"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansip521r1",
+      "group": "x963",
+      "oid": "1.3.132.0.35",
+      "form": "Weierstrass",
+      "aliases": [
+        "secp521r1",
+        "P-521"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit163k1",
+      "group": "x963",
+      "oid": "1.3.132.0.1",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect163k1",
+        "k-163",
+        "wap-wsg-idm-ecid-wtls3"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit163r1",
+      "group": "x963",
+      "oid": "1.3.132.0.2",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect163r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit163r2",
+      "group": "x963",
+      "oid": "1.3.132.0.15",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect163r2",
+        "B-163"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit193r1",
+      "group": "x963",
+      "oid": "1.3.132.0.24",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect193r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit193r2",
+      "group": "x963",
+      "oid": "1.3.132.0.25",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect193r2"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit233k1",
+      "group": "x963",
+      "oid": "1.3.132.0.26",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect233k1",
+        "K-233",
+        "wap-wsg-idm-ecid-wtls10"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit233r1",
+      "group": "x963",
+      "oid": "1.3.132.0.27",
+      "form": "Weierstrass",
+      "aliases": [
+        "wap-wsg-idm-ecid-wtls11",
+        "B-233",
+        "sect233r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit239k1",
+      "group": "x963",
+      "oid": "1.3.132.0.3",
+      "form": "Weierstrass",
+      "aliases": [
+        "sect239k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit283k1",
+      "group": "x963",
+      "oid": "1.3.132.0.16",
+      "form": "Weierstrass",
+      "aliases": [
+        "K-283",
+        "sect283k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit283r1",
+      "group": "x963",
+      "oid": "1.3.132.0.17",
+      "form": "Weierstrass",
+      "aliases": [
+        "B-283",
+        "sect283r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit409k1",
+      "group": "x963",
+      "oid": "1.3.132.0.36",
+      "form": "Weierstrass",
+      "aliases": [
+        "K-409",
+        "sect409k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit409r1",
+      "group": "x963",
+      "oid": "1.3.132.0.37",
+      "form": "Weierstrass",
+      "aliases": [
+        "B-409",
+        "sect409r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit571k1",
+      "group": "x963",
+      "oid": "1.3.132.0.38",
+      "form": "Weierstrass",
+      "aliases": [
+        "K-571",
+        "sect571k1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    },
+    {
+      "name": "ansit571r1",
+      "group": "x963",
+      "oid": "1.3.132.0.39",
+      "form": "Weierstrass",
+      "aliases": [
+        "B-571",
+        "sect571r1"
+      ],
+      "ref": {
+        "url": "https://github.com/CycloneDX/specification/blob/5fee6af48d43c751dc6a5b31138f06af2b10bac5/schema/cryptography-defs.json",
+        "locator": null
+      }
+    }
+  ]
+}

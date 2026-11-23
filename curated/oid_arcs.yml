@@ -1,0 +1,85 @@
+# Family and primitive for OpenSSL objects.txt OIDs, by the spec that defines them.
+#
+# OpenSSL names (SHA256, RSA-SHA256, ecdsa-with-SHA256) mostly do not match the
+# CycloneDX registry's name patterns, so cl assical algorithm OIDs are classified
+# here by OID instead. Every rule cites the document that assigns those OIDs.
+#
+# Rule fields:
+#   oids        exact OIDs
+#   subtree     every OID strictly below this arc (the arc root itself is not matched)
+#   children    with subtree: only direct children in this range, e.g. "17-19"
+#   family      CycloneDX registry family name, or a key type (RSA, EC, DH) with key_type: true
+#   primitive   CycloneDX primitive. Omit to take it from the registry: the object's
+#               names are matched against that family's patterns, else the family's
+#               only primitive if it has exactly one.
+#   curve       true -> the objects are named elliptic curves
+#   exclude     true -> drop the objects (algorithm parameters, not algorithms)
+#   cite        document id from sources.yml `documents`, locator = section/appendix
+#
+# Matching: exact beats subtree; among subtrees the longest arc wins.
+# Objects that no rule matches are still kept if their OID is a CycloneDX curve
+# OID or one of their names matches a registry pattern; everything else is
+# written to data/merged/excluded_openssl.json.
+
+rules:
+  # --- PKCS #1 (RSA) ----------------------------------------------------------
+  - {oids: ["1.2.840.113549.1.1.1"], family: RSA, key_type: true, cite: {doc: rfc8017, locator: "Appendix A.1"}}
+  - {oids: ["1.2.840.113549.1.1.2", "1.2.840.113549.1.1.4", "1.2.840.113549.1.1.5",
+            "1.2.840.113549.1.1.11", "1.2.840.113549.1.1.12", "1.2.840.113549.1.1.13",
+            "1.2.840.113549.1.1.14", "1.2.840.113549.1.1.15", "1.2.840.113549.1.1.16"],
+     family: RSASSA-PKCS1, primitive: signature, cite: {doc: rfc8017, locator: "Appendix A.2.4"}}
+  - {oids: ["1.2.840.113549.1.1.7"], family: RSAES-OAEP, primitive: pke, cite: {doc: rfc8017, locator: "Appendix A.2.1"}}
+  - {oids: ["1.2.840.113549.1.1.10"], family: RSASSA-PSS, primitive: signature, cite: {doc: rfc8017, locator: "Appendix A.2.3"}}
+  - {oids: ["1.2.840.113549.1.1.6", "1.2.840.113549.1.1.8", "1.2.840.113549.1.1.9"],
+     exclude: true, cite: {doc: rfc8017, locator: "Appendix A.2.1 (OAEP/MGF1 parameters)"}}
+
+  # --- PKCS #5 (password-based) and RSADSI digests/ciphers ---------------------
+  - {oids: ["1.2.840.113549.1.5.12"], family: PBKDF2, primitive: kdf, cite: {doc: rfc8018, locator: "Appendix A.2"}}
+  - {oids: ["1.2.840.113549.1.5.13"], family: PBES2, cite: {doc: rfc8018, locator: "Appendix A.4"}}
+  - {oids: ["1.2.840.113549.1.5.14"], family: PBMAC1, primitive: mac, cite: {doc: rfc8018, locator: "Appendix A.5"}}
+  - {oids: ["1.2.840.113549.1.5.1", "1.2.840.113549.1.5.3", "1.2.840.113549.1.5.4",
+            "1.2.840.113549.1.5.6", "1.2.840.113549.1.5.10", "1.2.840.113549.1.5.11"],
+     family: PBES1, cite: {doc: rfc8018, locator: "Appendix A.3"}}
+  - {subtree: "1.2.840.113549.2", children: "7-13", family: HMAC, primitive: mac, cite: {doc: rfc8018, locator: "Appendix B.1"}}
+  - {oids: ["1.2.840.113549.3.7"], family: 3DES, primitive: block-cipher, cite: {doc: rfc8018, locator: "Appendix B.2.2"}}
+  - {oids: ["1.2.840.113549.3.2"], family: RC2, primitive: block-cipher, cite: {doc: rfc8018, locator: "Appendix B.2.3"}}
+  - {oids: ["1.3.14.3.2.7"], family: DES, primitive: block-cipher, cite: {doc: rfc8018, locator: "Appendix B.2.1"}}
+
+  # --- PKIX algorithms (RFC 3279) ------------------------------------------------
+  - {oids: ["1.2.840.113549.2.2"], family: MD2, primitive: hash, cite: {doc: rfc3279, locator: "2.1"}}
+  - {oids: ["1.2.840.113549.2.5"], family: MD5, primitive: hash, cite: {doc: rfc3279, locator: "2.1"}}
+  - {oids: ["1.3.14.3.2.26"], family: SHA-1, primitive: hash, cite: {doc: rfc3279, locator: "2.1"}}
+  - {oids: ["1.2.840.10040.4.1"], family: DSA, primitive: signature, cite: {doc: rfc3279, locator: "2.3.2"}}
+  - {oids: ["1.2.840.10040.4.3"], family: DSA, primitive: signature, cite: {doc: rfc3279, locator: "2.2.2"}}
+  - {oids: ["1.2.840.10046.2.1"], family: DH, key_type: true, cite: {doc: rfc3279, locator: "2.3.3"}}
+  - {oids: ["1.2.840.10045.2.1"], family: EC, key_type: true, cite: {doc: rfc3279, locator: "2.3.5"}}
+  - {oids: ["1.2.840.10045.4.1"], family: ECDSA, primitive: signature, cite: {doc: rfc3279, locator: "2.2.3"}}
+  - {subtree: "1.2.840.10045.3", curve: true, cite: {doc: rfc3279, locator: "2.3.5"}}
+  - {subtree: "1.2.840.10045.1", exclude: true, cite: {doc: rfc3279, locator: "2.3.5 (field types)"}}
+
+  # --- ECDSA/DSA with SHA-2 (RFC 5758), EdDSA/XDH (RFC 8410), CMS ECDH (RFC 5753)
+  - {subtree: "1.2.840.10045.4.3", family: ECDSA, primitive: signature, cite: {doc: rfc5758, locator: "3.2"}}
+  - {subtree: "2.16.840.1.101.3.4.3", children: "1-2", family: DSA, primitive: signature, cite: {doc: rfc5758, locator: "3.1"}}
+  - {oids: ["1.3.101.110", "1.3.101.111"], family: ECDH, primitive: key-agree, cite: {doc: rfc8410, locator: "3"}}
+  - {oids: ["1.3.101.112", "1.3.101.113"], family: EdDSA, primitive: signature, cite: {doc: rfc8410, locator: "3"}}
+  - {subtree: "1.3.132.1.11", family: ECDH, primitive: key-agree, cite: {doc: rfc5753, locator: "7.1.4"}}
+  - {subtree: "1.3.132.1.14", family: ECDH, primitive: key-agree, cite: {doc: rfc5753, locator: "7.1.4"}}
+
+  # --- NIST algorithm arc 2.16.840.1.101.3.4 (CSOR) ---------------------------------
+  - {subtree: "2.16.840.1.101.3.4.1", family: AES, cite: {doc: nist-csor, locator: "aes"}}
+  - {oids: ["2.16.840.1.101.3.4.1.5", "2.16.840.1.101.3.4.1.8", "2.16.840.1.101.3.4.1.25",
+            "2.16.840.1.101.3.4.1.28", "2.16.840.1.101.3.4.1.45", "2.16.840.1.101.3.4.1.48"],
+     family: AES, primitive: key-wrap, cite: {doc: nist-csor, locator: "aes"}}
+  - {subtree: "2.16.840.1.101.3.4.2", children: "1-6", family: SHA-2, primitive: hash, cite: {doc: nist-csor, locator: "hashAlgs"}}
+  - {subtree: "2.16.840.1.101.3.4.2", children: "7-10", family: SHA-3, primitive: hash, cite: {doc: nist-csor, locator: "hashAlgs"}}
+  - {subtree: "2.16.840.1.101.3.4.2", children: "11-12", family: SHA-3, primitive: xof, cite: {doc: nist-csor, locator: "hashAlgs"}}
+  - {subtree: "2.16.840.1.101.3.4.2", children: "13-16", family: HMAC, primitive: mac, cite: {doc: nist-csor, locator: "hashAlgs"}}
+  - {subtree: "2.16.840.1.101.3.4.2", children: "19-20", family: KMAC, primitive: mac, cite: {doc: nist-csor, locator: "hashAlgs"}}
+  - {subtree: "2.16.840.1.101.3.4.3", children: "3-8", family: DSA, primitive: signature, cite: {doc: nist-csor, locator: "sigAlgs"}}
+  - {subtree: "2.16.840.1.101.3.4.3", children: "9-12", family: ECDSA, primitive: signature, cite: {doc: nist-csor, locator: "sigAlgs"}}
+  - {subtree: "2.16.840.1.101.3.4.3", children: "13-16", family: RSASSA-PKCS1, primitive: signature, cite: {doc: nist-csor, locator: "sigAlgs"}}
+  - {subtree: "2.16.840.1.101.3.4.3", children: "17-19", family: ML-DSA, primitive: signature, cite: {doc: nist-csor, locator: "sigAlgs"}}
+  - {subtree: "2.16.840.1.101.3.4.3", children: "20-31", family: SLH-DSA, primitive: signature, cite: {doc: nist-csor, locator: "sigAlgs"}}
+  - {subtree: "2.16.840.1.101.3.4.3", children: "32-34", family: ML-DSA, primitive: signature, cite: {doc: nist-csor, locator: "sigAlgs (HashML-DSA)"}}
+  - {subtree: "2.16.840.1.101.3.4.3", children: "35-46", family: SLH-DSA, primitive: signature, cite: {doc: nist-csor, locator: "sigAlgs (HashSLH-DSA)"}}
+  - {subtree: "2.16.840.1.101.3.4.4", family: ML-KEM, primitive: kem, cite: {doc: nist-csor, locator: "kems"}}

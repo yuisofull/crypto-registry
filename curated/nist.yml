@@ -1,0 +1,117 @@
+# Values NIST publishes only as PDF tables, transcribed by hand.
+# Every table carries a citation (document id from sources.yml + table number).
+#
+# `verified: false` means the rows were transcribed but not yet checked line by
+# line against the PDF. After checking a table, set it to true.
+# parse.py prints a warning for every unverified table.
+#
+# Conventions:
+#   nist_quantum_level  0 = none of the NIST categories met (CycloneDX definition)
+#   registry_families   CycloneDX registry family names (plus key types RSA, EC, DH
+#                       from curated/oid_arcs.yml) that a quantum-vulnerable row covers.
+#                       This mapping is ours, not NIST's: IR 8547 names algorithms,
+#                       the registry splits them into families.
+#   "< 1" in IR 8547 is stored as level 0; "< 80 bits" as bits: null + bits_note.
+
+security_categories:
+  cite: {doc: nist-ir-8547, table: "Table 1", section: "4.1"}
+  verified: true
+  rows:
+    - {category: 1, attack: "Key search on a block cipher with a 128-bit key", example: AES-128}
+    - {category: 2, attack: "Collision search on a 256-bit hash function", example: SHA-256}
+    - {category: 3, attack: "Key search on a block cipher with a 192-bit key", example: AES-192}
+    - {category: 4, attack: "Collision search on a 384-bit hash function", example: SHA3-384}
+    - {category: 5, attack: "Key search on a block cipher with a 256-bit key", example: AES-256}
+
+quantum_vulnerable_signatures:
+  cite: {doc: nist-ir-8547, table: "Table 2", section: "4.1.1"}
+  verified: true
+  rows:
+    - {family: ECDSA, registry_families: [ECDSA, EC], primitive: signature, standard: FIPS186, min_classical_bits: 112, deprecated_after: 2030, disallowed_after: 2035, nist_quantum_level: 0}
+    - {family: EdDSA, registry_families: [EdDSA], primitive: signature, standard: FIPS186, min_classical_bits: 128, deprecated_after: 2030, disallowed_after: 2035, nist_quantum_level: 0}
+    - {family: RSA, registry_families: [RSASSA-PKCS1, RSASSA-PSS, RSA-X931, RSA], primitive: signature, standard: FIPS186, min_classical_bits: 112, deprecated_after: 2030, disallowed_after: 2035, nist_quantum_level: 0}
+
+quantum_vulnerable_key_establishment:
+  cite: {doc: nist-ir-8547, table: "Table 4", section: "4.1.2"}
+  verified: true
+  rows:
+    - {family: FFDH, registry_families: [FFDH, DH], primitive: key-agree, standard: SP80056A, note: "Finite field DH and MQV", min_classical_bits: 112, deprecated_after: 2030, disallowed_after: 2035, nist_quantum_level: 0}
+    - {family: ECDH, registry_families: [ECDH, MQV], primitive: key-agree, standard: SP80056A, note: "Elliptic curve DH and MQV", min_classical_bits: 112, deprecated_after: 2030, disallowed_after: 2035, nist_quantum_level: 0}
+    - {family: RSA, registry_families: [RSAES-OAEP, RSAES-PKCS1], primitive: pke, standard: SP80056B, note: "RSA key establishment", min_classical_bits: 112, deprecated_after: 2030, disallowed_after: 2035, nist_quantum_level: 0}
+
+block_ciphers:
+  cite: {doc: nist-ir-8547, table: "Table 6", section: "4.1.3"}
+  verified: true
+  rows:
+    - {algorithm: AES-128, family: AES, primitive: block-cipher, standard: FIPS197, classical_bits: 128, nist_quantum_level: 1}
+    - {algorithm: AES-192, family: AES, primitive: block-cipher, standard: FIPS197, classical_bits: 192, nist_quantum_level: 3}
+    - {algorithm: AES-256, family: AES, primitive: block-cipher, standard: FIPS197, classical_bits: 256, nist_quantum_level: 5}
+
+aead:
+  cite: {doc: nist-ir-8547, table: "Table 7", section: "4.1.3"}
+  verified: true
+  rows:
+    - {algorithm: Ascon-AEAD128, family: Ascon, primitive: ae, standard: SP800232, classical_bits: 128, nist_quantum_level: 1}
+
+hash_functions:
+  cite: {doc: nist-ir-8547, table: "Table 8", section: "4.1.3"}
+  verified: true
+  # SHA-1 is deprecated for all remaining uses and disallowed in FIPS modules after 2030 (Table 8 note).
+  rows:
+    - {algorithm: SHA-1,        family: SHA-1, primitive: hash, standard: FIPS180,  collision_bits: null, collision_bits_note: "< 80", collision_level: 0, preimage_bits: 160, preimage_level: 1}
+    - {algorithm: SHA-224,      family: SHA-2, primitive: hash, standard: FIPS180,  collision_bits: 112, collision_level: 0, preimage_bits: 224, preimage_level: 3}
+    - {algorithm: SHA-512/224,  family: SHA-2, primitive: hash, standard: FIPS180,  collision_bits: 112, collision_level: 0, preimage_bits: 224, preimage_level: 3}
+    - {algorithm: SHA-256,      family: SHA-2, primitive: hash, standard: FIPS180,  collision_bits: 128, collision_level: 2, preimage_bits: 256, preimage_level: 5}
+    - {algorithm: SHA-512/256,  family: SHA-2, primitive: hash, standard: FIPS180,  collision_bits: 128, collision_level: 2, preimage_bits: 256, preimage_level: 5}
+    - {algorithm: SHA-384,      family: SHA-2, primitive: hash, standard: FIPS180,  collision_bits: 192, collision_level: 4, preimage_bits: 384, preimage_level: 5}
+    - {algorithm: SHA-512,      family: SHA-2, primitive: hash, standard: FIPS180,  collision_bits: 256, collision_level: 5, preimage_bits: 512, preimage_level: 5}
+    - {algorithm: SHA3-224,     family: SHA-3, primitive: hash, standard: FIPS202,  collision_bits: 112, collision_level: 0, preimage_bits: 224, preimage_level: 3}
+    - {algorithm: SHA3-256,     family: SHA-3, primitive: hash, standard: FIPS202,  collision_bits: 128, collision_level: 2, preimage_bits: 256, preimage_level: 5}
+    - {algorithm: SHA3-384,     family: SHA-3, primitive: hash, standard: FIPS202,  collision_bits: 192, collision_level: 4, preimage_bits: 384, preimage_level: 5}
+    - {algorithm: SHA3-512,     family: SHA-3, primitive: hash, standard: FIPS202,  collision_bits: 256, collision_level: 5, preimage_bits: 512, preimage_level: 5}
+    - {algorithm: SHAKE128,     family: SHA-3, primitive: xof,  standard: FIPS202,  collision_bits: 128, collision_level: 2, preimage_bits: 128, preimage_level: 2, note: "assuming large enough output size"}
+    - {algorithm: SHAKE256,     family: SHA-3, primitive: xof,  standard: FIPS202,  collision_bits: 256, collision_level: 5, preimage_bits: 256, preimage_level: 5, note: "assuming large enough output size"}
+    - {algorithm: Ascon-Hash256, family: Ascon, primitive: hash, standard: SP800232, collision_bits: 128, collision_level: 2, preimage_bits: 128, preimage_level: 2}
+    - {algorithm: Ascon-XOF128,  family: Ascon, primitive: xof,  standard: SP800232, collision_bits: 128, collision_level: 2, preimage_bits: 128, preimage_level: 2, note: "assuming large enough output size"}
+    - {algorithm: Ascon-CXOF128, family: Ascon, primitive: xof,  standard: SP800232, collision_bits: 128, collision_level: 2, preimage_bits: 128, preimage_level: 2, note: "assuming large enough output size"}
+
+# Key size -> classical security strength for the public-key families that
+# IR 8547 only describes as ">= 112 bits".
+#   ffc_L / ffc_N  finite field (DSA, DH, MQV): public key bits / private key bits
+#   ifc_k          integer factorization (RSA): modulus bits
+#   ecc_f          elliptic curve (ECDSA, EdDSA, ECDH): order bits, range [min, max]
+classical_strength:
+  cite: {doc: nist-sp-800-57pt1r5, table: "Table 2", section: "5.6.1.1"}
+  verified: true
+  rows:
+    - {bits: 80,  bits_note: "<= 80", symmetric: 2TDEA,   ffc_L: 1024,  ffc_N: 160, ifc_k: 1024,  ecc_f_min: 160, ecc_f_max: 223}
+    - {bits: 112, symmetric: 3TDEA,   ffc_L: 2048,  ffc_N: 224, ifc_k: 2048,  ecc_f_min: 224, ecc_f_max: 255}
+    - {bits: 128, symmetric: AES-128, ffc_L: 3072,  ffc_N: 256, ifc_k: 3072,  ecc_f_min: 256, ecc_f_max: 383}
+    - {bits: 192, symmetric: AES-192, ffc_L: 7680,  ffc_N: 384, ifc_k: 7680,  ecc_f_min: 384, ecc_f_max: 511}
+    - {bits: 256, symmetric: AES-256, ffc_L: 15360, ffc_N: 512, ifc_k: 15360, ecc_f_min: 512, ecc_f_max: null}
+
+# Named curves with the security strength NIST states for them.
+# `aliases`: other names the same curve goes by in oqs-provider / OpenSSL /
+# CycloneDX (secg and x962 aliases already come from the CycloneDX registry).
+named_curves:
+  cite: {doc: nist-sp-800-186, table: "Table 1", section: "3.1.2"}
+  verified: true
+  rows:
+    - {curve: P-224,        bits: 112, aliases: [p224]}
+    - {curve: P-256,        bits: 128, aliases: [p256, secp256_r1, nistp256]}
+    - {curve: P-384,        bits: 192, aliases: [p384, secp384_r1, nistp384]}
+    - {curve: P-521,        bits: 256, aliases: [p521, secp521_r1, nistp521]}
+    - {curve: Curve25519,   bits: 128, aliases: [X25519, x25519], aliases_cite: rfc7748}
+    - {curve: Curve448,     bits: 224, aliases: [X448, x448], aliases_cite: rfc7748}
+    - {curve: Edwards25519, bits: 128, aliases: [Ed25519, ED25519], aliases_cite: rfc8032}
+    - {curve: Edwards448,   bits: 224, aliases: [Ed448, ED448], aliases_cite: rfc8032}
+    - {curve: K-233, bits: 112, aliases: []}
+    - {curve: B-233, bits: 112, aliases: []}
+    - {curve: K-283, bits: 128, aliases: []}
+    - {curve: B-283, bits: 128, aliases: []}
+    - {curve: K-409, bits: 192, aliases: []}
+    - {curve: B-409, bits: 192, aliases: []}
+    - {curve: K-571, bits: 256, aliases: []}
+    - {curve: B-571, bits: 256, aliases: []}
+    # Brainpool (RFC 5639): SP 800-186 references these curves but gives no
+    # strength, so they are intentionally absent.

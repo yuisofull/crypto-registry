@@ -1,0 +1,1008 @@
+{
+  "generated_at_utc": "2026-11-23T08:02:08Z",
+  "sources": [
+    {
+      "id": "nist-ir-8547",
+      "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf"
+    },
+    {
+      "id": "nist-sp-800-186",
+      "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf"
+    },
+    {
+      "id": "nist-sp-800-57pt1r5",
+      "title": "NIST SP 800-57 Part 1 Rev. 5, Recommendation for Key Management",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf"
+    }
+  ],
+  "count": 52,
+  "records": [
+    {
+      "category": 1,
+      "attack": "Key search on a block cipher with a 128-bit key",
+      "example": "AES-128",
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 1",
+        "section": "4.1",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "category": 2,
+      "attack": "Collision search on a 256-bit hash function",
+      "example": "SHA-256",
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 1",
+        "section": "4.1",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "category": 3,
+      "attack": "Key search on a block cipher with a 192-bit key",
+      "example": "AES-192",
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 1",
+        "section": "4.1",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "category": 4,
+      "attack": "Collision search on a 384-bit hash function",
+      "example": "SHA3-384",
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 1",
+        "section": "4.1",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "category": 5,
+      "attack": "Key search on a block cipher with a 256-bit key",
+      "example": "AES-256",
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 1",
+        "section": "4.1",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "family": "ECDSA",
+      "registry_families": [
+        "ECDSA",
+        "EC"
+      ],
+      "primitive": "signature",
+      "standard": "FIPS186",
+      "note": null,
+      "min_classical_bits": 112,
+      "deprecated_after": 2030,
+      "disallowed_after": 2035,
+      "nist_level": 0,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 2",
+        "section": "4.1.1",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "family": "EdDSA",
+      "registry_families": [
+        "EdDSA"
+      ],
+      "primitive": "signature",
+      "standard": "FIPS186",
+      "note": null,
+      "min_classical_bits": 128,
+      "deprecated_after": 2030,
+      "disallowed_after": 2035,
+      "nist_level": 0,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 2",
+        "section": "4.1.1",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "family": "RSA",
+      "registry_families": [
+        "RSASSA-PKCS1",
+        "RSASSA-PSS",
+        "RSA-X931",
+        "RSA"
+      ],
+      "primitive": "signature",
+      "standard": "FIPS186",
+      "note": null,
+      "min_classical_bits": 112,
+      "deprecated_after": 2030,
+      "disallowed_after": 2035,
+      "nist_level": 0,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 2",
+        "section": "4.1.1",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "family": "FFDH",
+      "registry_families": [
+        "FFDH",
+        "DH"
+      ],
+      "primitive": "key-agree",
+      "standard": "SP80056A",
+      "note": "Finite field DH and MQV",
+      "min_classical_bits": 112,
+      "deprecated_after": 2030,
+      "disallowed_after": 2035,
+      "nist_level": 0,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 4",
+        "section": "4.1.2",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "family": "ECDH",
+      "registry_families": [
+        "ECDH",
+        "MQV"
+      ],
+      "primitive": "key-agree",
+      "standard": "SP80056A",
+      "note": "Elliptic curve DH and MQV",
+      "min_classical_bits": 112,
+      "deprecated_after": 2030,
+      "disallowed_after": 2035,
+      "nist_level": 0,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 4",
+        "section": "4.1.2",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "family": "RSA",
+      "registry_families": [
+        "RSAES-OAEP",
+        "RSAES-PKCS1"
+      ],
+      "primitive": "pke",
+      "standard": "SP80056B",
+      "note": "RSA key establishment",
+      "min_classical_bits": 112,
+      "deprecated_after": 2030,
+      "disallowed_after": 2035,
+      "nist_level": 0,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 4",
+        "section": "4.1.2",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "AES-128",
+      "family": "AES",
+      "primitive": "block-cipher",
+      "standard": "FIPS197",
+      "classical_bits": 128,
+      "nist_level": 1,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 6",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "AES-192",
+      "family": "AES",
+      "primitive": "block-cipher",
+      "standard": "FIPS197",
+      "classical_bits": 192,
+      "nist_level": 3,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 6",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "AES-256",
+      "family": "AES",
+      "primitive": "block-cipher",
+      "standard": "FIPS197",
+      "classical_bits": 256,
+      "nist_level": 5,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 6",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "Ascon-AEAD128",
+      "family": "Ascon",
+      "primitive": "ae",
+      "standard": "SP800232",
+      "classical_bits": 128,
+      "nist_level": 1,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 7",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "SHA-1",
+      "family": "SHA-1",
+      "primitive": "hash",
+      "standard": "FIPS180",
+      "collision_bits": null,
+      "collision_level": 0,
+      "preimage_bits": 160,
+      "preimage_level": 1,
+      "note": null,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "SHA-224",
+      "family": "SHA-2",
+      "primitive": "hash",
+      "standard": "FIPS180",
+      "collision_bits": 112,
+      "collision_level": 0,
+      "preimage_bits": 224,
+      "preimage_level": 3,
+      "note": null,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "SHA-512/224",
+      "family": "SHA-2",
+      "primitive": "hash",
+      "standard": "FIPS180",
+      "collision_bits": 112,
+      "collision_level": 0,
+      "preimage_bits": 224,
+      "preimage_level": 3,
+      "note": null,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "SHA-256",
+      "family": "SHA-2",
+      "primitive": "hash",
+      "standard": "FIPS180",
+      "collision_bits": 128,
+      "collision_level": 2,
+      "preimage_bits": 256,
+      "preimage_level": 5,
+      "note": null,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "SHA-512/256",
+      "family": "SHA-2",
+      "primitive": "hash",
+      "standard": "FIPS180",
+      "collision_bits": 128,
+      "collision_level": 2,
+      "preimage_bits": 256,
+      "preimage_level": 5,
+      "note": null,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "SHA-384",
+      "family": "SHA-2",
+      "primitive": "hash",
+      "standard": "FIPS180",
+      "collision_bits": 192,
+      "collision_level": 4,
+      "preimage_bits": 384,
+      "preimage_level": 5,
+      "note": null,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "SHA-512",
+      "family": "SHA-2",
+      "primitive": "hash",
+      "standard": "FIPS180",
+      "collision_bits": 256,
+      "collision_level": 5,
+      "preimage_bits": 512,
+      "preimage_level": 5,
+      "note": null,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "SHA3-224",
+      "family": "SHA-3",
+      "primitive": "hash",
+      "standard": "FIPS202",
+      "collision_bits": 112,
+      "collision_level": 0,
+      "preimage_bits": 224,
+      "preimage_level": 3,
+      "note": null,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "SHA3-256",
+      "family": "SHA-3",
+      "primitive": "hash",
+      "standard": "FIPS202",
+      "collision_bits": 128,
+      "collision_level": 2,
+      "preimage_bits": 256,
+      "preimage_level": 5,
+      "note": null,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "SHA3-384",
+      "family": "SHA-3",
+      "primitive": "hash",
+      "standard": "FIPS202",
+      "collision_bits": 192,
+      "collision_level": 4,
+      "preimage_bits": 384,
+      "preimage_level": 5,
+      "note": null,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "SHA3-512",
+      "family": "SHA-3",
+      "primitive": "hash",
+      "standard": "FIPS202",
+      "collision_bits": 256,
+      "collision_level": 5,
+      "preimage_bits": 512,
+      "preimage_level": 5,
+      "note": null,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "SHAKE128",
+      "family": "SHA-3",
+      "primitive": "xof",
+      "standard": "FIPS202",
+      "collision_bits": 128,
+      "collision_level": 2,
+      "preimage_bits": 128,
+      "preimage_level": 2,
+      "note": "assuming large enough output size",
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "SHAKE256",
+      "family": "SHA-3",
+      "primitive": "xof",
+      "standard": "FIPS202",
+      "collision_bits": 256,
+      "collision_level": 5,
+      "preimage_bits": 256,
+      "preimage_level": 5,
+      "note": "assuming large enough output size",
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "Ascon-Hash256",
+      "family": "Ascon",
+      "primitive": "hash",
+      "standard": "SP800232",
+      "collision_bits": 128,
+      "collision_level": 2,
+      "preimage_bits": 128,
+      "preimage_level": 2,
+      "note": null,
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "Ascon-XOF128",
+      "family": "Ascon",
+      "primitive": "xof",
+      "standard": "SP800232",
+      "collision_bits": 128,
+      "collision_level": 2,
+      "preimage_bits": 128,
+      "preimage_level": 2,
+      "note": "assuming large enough output size",
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "algorithm": "Ascon-CXOF128",
+      "family": "Ascon",
+      "primitive": "xof",
+      "standard": "SP800232",
+      "collision_bits": 128,
+      "collision_level": 2,
+      "preimage_bits": 128,
+      "preimage_level": 2,
+      "note": "assuming large enough output size",
+      "cite": {
+        "doc": "nist-ir-8547",
+        "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+        "table": "Table 8",
+        "section": "4.1.3",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "bits": 80,
+      "symmetric": "2TDEA",
+      "ffc_l": 1024,
+      "ffc_n": 160,
+      "ifc_k": 1024,
+      "ecc_f_min": 160,
+      "ecc_f_max": 223,
+      "cite": {
+        "doc": "nist-sp-800-57pt1r5",
+        "title": "NIST SP 800-57 Part 1 Rev. 5, Recommendation for Key Management",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+        "table": "Table 2",
+        "section": "5.6.1.1",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "bits": 112,
+      "symmetric": "3TDEA",
+      "ffc_l": 2048,
+      "ffc_n": 224,
+      "ifc_k": 2048,
+      "ecc_f_min": 224,
+      "ecc_f_max": 255,
+      "cite": {
+        "doc": "nist-sp-800-57pt1r5",
+        "title": "NIST SP 800-57 Part 1 Rev. 5, Recommendation for Key Management",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+        "table": "Table 2",
+        "section": "5.6.1.1",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "bits": 128,
+      "symmetric": "AES-128",
+      "ffc_l": 3072,
+      "ffc_n": 256,
+      "ifc_k": 3072,
+      "ecc_f_min": 256,
+      "ecc_f_max": 383,
+      "cite": {
+        "doc": "nist-sp-800-57pt1r5",
+        "title": "NIST SP 800-57 Part 1 Rev. 5, Recommendation for Key Management",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+        "table": "Table 2",
+        "section": "5.6.1.1",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "bits": 192,
+      "symmetric": "AES-192",
+      "ffc_l": 7680,
+      "ffc_n": 384,
+      "ifc_k": 7680,
+      "ecc_f_min": 384,
+      "ecc_f_max": 511,
+      "cite": {
+        "doc": "nist-sp-800-57pt1r5",
+        "title": "NIST SP 800-57 Part 1 Rev. 5, Recommendation for Key Management",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+        "table": "Table 2",
+        "section": "5.6.1.1",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "bits": 256,
+      "symmetric": "AES-256",
+      "ffc_l": 15360,
+      "ffc_n": 512,
+      "ifc_k": 15360,
+      "ecc_f_min": 512,
+      "ecc_f_max": null,
+      "cite": {
+        "doc": "nist-sp-800-57pt1r5",
+        "title": "NIST SP 800-57 Part 1 Rev. 5, Recommendation for Key Management",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+        "table": "Table 2",
+        "section": "5.6.1.1",
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "curve": "P-224",
+      "bits": 112,
+      "aliases": [
+        "p224"
+      ],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": null
+    },
+    {
+      "curve": "P-256",
+      "bits": 128,
+      "aliases": [
+        "p256",
+        "secp256_r1",
+        "nistp256"
+      ],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": null
+    },
+    {
+      "curve": "P-384",
+      "bits": 192,
+      "aliases": [
+        "p384",
+        "secp384_r1",
+        "nistp384"
+      ],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": null
+    },
+    {
+      "curve": "P-521",
+      "bits": 256,
+      "aliases": [
+        "p521",
+        "secp521_r1",
+        "nistp521"
+      ],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": null
+    },
+    {
+      "curve": "Curve25519",
+      "bits": 128,
+      "aliases": [
+        "X25519",
+        "x25519"
+      ],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": {
+        "doc": "rfc7748",
+        "title": "RFC 7748, Elliptic Curves for Security (X25519, X448)",
+        "url": "https://www.rfc-editor.org/rfc/rfc7748",
+        "table": null,
+        "section": null,
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "curve": "Curve448",
+      "bits": 224,
+      "aliases": [
+        "X448",
+        "x448"
+      ],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": {
+        "doc": "rfc7748",
+        "title": "RFC 7748, Elliptic Curves for Security (X25519, X448)",
+        "url": "https://www.rfc-editor.org/rfc/rfc7748",
+        "table": null,
+        "section": null,
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "curve": "Edwards25519",
+      "bits": 128,
+      "aliases": [
+        "Ed25519",
+        "ED25519"
+      ],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": {
+        "doc": "rfc8032",
+        "title": "RFC 8032, Edwards-Curve Digital Signature Algorithm (EdDSA)",
+        "url": "https://www.rfc-editor.org/rfc/rfc8032",
+        "table": null,
+        "section": null,
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "curve": "Edwards448",
+      "bits": 224,
+      "aliases": [
+        "Ed448",
+        "ED448"
+      ],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": {
+        "doc": "rfc8032",
+        "title": "RFC 8032, Edwards-Curve Digital Signature Algorithm (EdDSA)",
+        "url": "https://www.rfc-editor.org/rfc/rfc8032",
+        "table": null,
+        "section": null,
+        "locator": null,
+        "verified": true
+      }
+    },
+    {
+      "curve": "K-233",
+      "bits": 112,
+      "aliases": [],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": null
+    },
+    {
+      "curve": "B-233",
+      "bits": 112,
+      "aliases": [],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": null
+    },
+    {
+      "curve": "K-283",
+      "bits": 128,
+      "aliases": [],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": null
+    },
+    {
+      "curve": "B-283",
+      "bits": 128,
+      "aliases": [],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": null
+    },
+    {
+      "curve": "K-409",
+      "bits": 192,
+      "aliases": [],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": null
+    },
+    {
+      "curve": "B-409",
+      "bits": 192,
+      "aliases": [],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": null
+    },
+    {
+      "curve": "K-571",
+      "bits": 256,
+      "aliases": [],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": null
+    },
+    {
+      "curve": "B-571",
+      "bits": 256,
+      "aliases": [],
+      "cite": {
+        "doc": "nist-sp-800-186",
+        "title": "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+        "table": "Table 1",
+        "section": "3.1.2",
+        "locator": null,
+        "verified": true
+      },
+      "aliases_cite": null
+    }
+  ]
+}

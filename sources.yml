@@ -1,0 +1,97 @@
+# Upstream data sources, pinned to exact commits.
+# `python fetch.py` downloads every file listed here into data/raw/.
+# `python fetch.py --bump` moves each source to the latest commit on its branch.
+#
+# Raw URL:   https://raw.githubusercontent.com/{repo}/{commit}/{path}
+# Permalink: https://github.com/{repo}/blob/{commit}/{path}
+
+sources:
+  openssl-objects:
+    repo: openssl/openssl
+    branch: master
+    commit: 763d5b1d6b87be13c014f54e8c1a219af8ba2724
+    license: Apache-2.0
+    provides: [oid, short_name, long_name]
+    files:
+      - crypto/objects/objects.txt
+
+  oqs-provider:
+    repo: open-quantum-safe/oqs-provider
+    branch: main
+    commit: 7b2cbb6c761f46e4600d14c0fca5f20f14617acb
+    license: MIT
+    provides: [oid, tls_codepoint, primitive, hybrid, composite]
+    files:
+      - oqs-template/generate.yml
+
+  liboqs:
+    repo: open-quantum-safe/liboqs
+    branch: main
+    commit: f822b059350af22adad99ef6b09a18819bcd49ed
+    license: MIT
+    provides: [parameter_set, primitive, nist_quantum_level]
+    files:
+      - docs/cbom.json
+      # kem.h / sig.h map the C ids used in oqs-provider (OQS_SIG_alg_uov_ov_Is)
+      # to the names used in cbom.json (OV-Is). Same repo and commit, so no new source.
+      - src/kem/kem.h
+      - src/sig/sig.h
+
+  cyclonedx-registry:
+    repo: CycloneDX/specification
+    branch: master
+    commit: 5fee6af48d43c751dc6a5b31138f06af2b10bac5
+    license: Apache-2.0
+    provides: [family, primitive, standard_refs, curve_oid]
+    files:
+      - schema/cryptography-defs.json
+
+# Documents that are cited but not fetched: NIST tables (PDF only) transcribed
+# into curated/nist.yml, and the RFCs/registers that assign the OIDs classified
+# in curated/oid_arcs.yml. Every curated row names one of these ids.
+documents:
+  nist-ir-8547:
+    title: "NIST IR 8547, Transition to Post-Quantum Cryptography Standards"
+    date: 2026-10
+    url: https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf
+    used_for: [security_categories, quantum_vulnerable, symmetric_levels, hash_levels]
+  nist-sp-800-57pt1r5:
+    title: "NIST SP 800-57 Part 1 Rev. 5, Recommendation for Key Management"
+    date: 2020-05
+    url: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf
+    doi: https://doi.org/10.6028/NIST.SP.800-57pt1r5
+    used_for: [classical_security_strength]
+  nist-sp-800-186:
+    title: "NIST SP 800-186, Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters"
+    date: 2023-02
+    url: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf
+    used_for: [named_curve_strength]
+  # OID assignments, cited by curated/oid_arcs.yml
+  nist-csor:
+    title: "NIST Computer Security Objects Register (CSOR), algorithm registrations"
+    url: https://csrc.nist.gov/projects/computer-security-objects-register/algorithm-registration
+  rfc8017:
+    title: "RFC 8017, PKCS #1: RSA Cryptography Specifications Version 2.2"
+    url: https://www.rfc-editor.org/rfc/rfc8017
+  rfc8018:
+    title: "RFC 8018, PKCS #5: Password-Based Cryptography Specification Version 2.1"
+    url: https://www.rfc-editor.org/rfc/rfc8018
+  rfc3279:
+    title: "RFC 3279, Algorithms and Identifiers for the Internet X.509 PKI"
+    url: https://www.rfc-editor.org/rfc/rfc3279
+  rfc5758:
+    title: "RFC 5758, Internet X.509 PKI: Additional Algorithms and Identifiers for DSA and ECDSA"
+    url: https://www.rfc-editor.org/rfc/rfc5758
+  rfc8410:
+    title: "RFC 8410, Algorithm Identifiers for Ed25519, Ed448, X25519, and X448"
+    url: https://www.rfc-editor.org/rfc/rfc8410
+  rfc5753:
+    title: "RFC 5753, Use of ECC Algorithms in CMS"
+    url: https://www.rfc-editor.org/rfc/rfc5753
+  # Curve name aliases, cited by curated/nist.yml named_curves
+  rfc7748:
+    title: "RFC 7748, Elliptic Curves for Security (X25519, X448)"
+    url: https://www.rfc-editor.org/rfc/rfc7748
+  rfc8032:
+    title: "RFC 8032, Edwards-Curve Digital Signature Algorithm (EdDSA)"
+    url: https://www.rfc-editor.org/rfc/rfc8032
